@@ -16,6 +16,11 @@ const config: Config = {
         Tungsten: ['Tungsten', 'sans-serif'],
         Sintony: ['Sintony', 'sans-serif'],
       },
+      colors: {
+        sacbeOrange: '#FFA500',
+        sacbeBlue: '#114550',
+        sacbeBeige: '#FFF6D2',
+      },
     },
   },
   plugins: [],
