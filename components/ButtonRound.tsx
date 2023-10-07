@@ -10,7 +10,7 @@ function ButtonRound({ label, className }: Props) {
   return (
     <button
       className={cn(
-        `bg-sacbeBlue w-full border-sacbeOrangeDarker border-2 rounded-full font-Sintony text-sacbeBeige`,
+        `bg-sacbeBlue w-full border-sacbeOrangeDarker border-2 rounded-full font-Sintony text-sacbeBeige hover:brightness-90`,
         className,
       )}
     >
