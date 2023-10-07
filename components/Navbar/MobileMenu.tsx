@@ -45,7 +45,9 @@ function MobilMenu({}: Props) {
                 </button>
               </div>
             </SheetTitle>
-            <SheetDescription>Description</SheetDescription>
+            <SheetDescription className='bg-sacbeOrange flex items-center justify-center text-2xl'>
+              PLACE HOLDER
+            </SheetDescription>
           </SheetHeader>
         </SheetContent>
       </Sheet>

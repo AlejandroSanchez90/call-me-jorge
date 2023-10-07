@@ -109,3 +109,7 @@ body,
   font-style: normal;
   font-display: block;
 }
+
+.no-spinners {
+  -moz-appearance: textfield;
+}

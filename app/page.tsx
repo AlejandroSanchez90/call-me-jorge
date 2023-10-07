@@ -1,3 +1,9 @@
+import HeroSection from '@/components/Hero/HeroSection';
+
 export default function Home() {
-  return <main className=''>Call me jorge</main>;
+  return (
+    <main className=''>
+      <HeroSection />
+    </main>
+  );
 }

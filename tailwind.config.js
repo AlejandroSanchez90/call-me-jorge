@@ -21,7 +21,7 @@ module.exports = {
         Sintony: ['Sintony', 'sans-serif'],
       },
       colors: {
-        sacbeOrange: '#FFA500',
+        sacbeOrange: '#E9993E',
         sacbeOrangeDarker: '#CA8923',
         sacbeBlue: '#114550',
         sacbeBeige: '#FFF6D2',
@@ -77,6 +77,9 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      backgroundImage: {
+        'hero-img': "url('/imgs/hero-imgen.png')",
       },
     },
   },
