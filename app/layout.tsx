@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -10,8 +11,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <head></head>
-      <body className='font-Tungsten'>{children}</body>
+      <body className='font-Tungsten scroll-smooth'>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
