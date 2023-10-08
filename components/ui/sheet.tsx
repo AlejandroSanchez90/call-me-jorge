@@ -6,7 +6,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { X } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
-import useMobilMenu from '@/hooks/mobileMenu';
+import useMobilMenu from '@/hooks/useMobileMenu';
 
 const Sheet = SheetPrimitive.Root;
 

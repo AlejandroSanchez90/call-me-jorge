@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionLayout from './SectionLayout';
 import Image from 'next/image';
+import SectionFooter from './SectionFooter';
 
 type Props = {};
 
@@ -90,7 +91,7 @@ function StepsSection({}: Props) {
           </div>
         </div>
         <div className=''>
-          <p className='text-center font-Sintony text-[10px] max-w-6xl mx-auto mt-5'>
+          <p className='text-center font-Sintony text-[10px] max-w-6xl mx-auto mt-5 footer'>
             *El destinatario deberá aplicar a una cuenta Sacbé en México. En México, las cuentas con
             tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de
             C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard
@@ -104,11 +105,9 @@ function StepsSection({}: Props) {
           </p>
         </div>
       </div>
-      <div className='hidden absolute  bg-sacbeBlue h-24 bottom-0 w-full lg:flex items-center justify-center'>
-        <h1 className=' leading-none text-6xl font-bold text-sacbeBeige'>
-          ENVÍOS 24/7 DESDE TU TELÉFONO
-        </h1>
-      </div>
+      <SectionFooter variant='blue' textColor='beige'>
+        <b>ENVÍOS 24/7 DESDE TU TELÉFONO</b>
+      </SectionFooter>
     </SectionLayout>
   );
 }

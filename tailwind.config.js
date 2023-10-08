@@ -80,6 +80,13 @@ module.exports = {
       },
       backgroundImage: {
         'hero-img': "url('/imgs/hero-imgen.png')",
+        'quoter-img': "url('/imgs/cotizador/bg-cotizador.png')",
+      },
+      padding: {
+        'footer-padding': '6rem',
+      },
+      height: {
+        'footer-height': '6rem',
       },
     },
   },

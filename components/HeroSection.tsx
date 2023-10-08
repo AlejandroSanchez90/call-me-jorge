@@ -1,7 +1,9 @@
 'use client';
-import InputCross from './InputCross';
+import InputCross from './Input/InputSacbe';
 import ButtonRound from './ButtonRound';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import SectionFooter from './SectionFooter';
+import toast from 'react-hot-toast';
 type Props = {};
 export type HeroInputs = {
   name: string;
@@ -17,12 +19,13 @@ function HeroSection({}: Props) {
     formState: { errors },
   } = useForm<HeroInputs>();
   const onSubmit: SubmitHandler<HeroInputs> = (data) => {
-    alert(
-      `FORM ES VALIDO! Name: ${data.name}, Phone: ${data.phone}, Email: ${data.email}, Postal: ${data.postalCode}`,
-    );
+    // alert(
+    //   `FORM ES VALIDO! Name: ${data.name}, Phone: ${data.phone}, Email: ${data.email}, Postal: ${data.postalCode}`,
+    // );
+    toast.success('Formulario enviado con éxito');
   };
   return (
-    <div className=' h-full pt-14 pb-0 lg:pb-24 w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
+    <div className=' h-full pt-14 pb-0 lg:pb-footer-padding w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
       {/* Texto */}
       <div className='flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
@@ -55,7 +58,7 @@ function HeroSection({}: Props) {
                 placeholder='TELÉFONO'
                 id='phone'
                 register={register}
-                type='text'
+                type='number'
                 registerOptions={{
                   required: true,
                   pattern: /^(0|[1-9]\d*)(\.\d+)?$/,
@@ -81,7 +84,7 @@ function HeroSection({}: Props) {
                 placeholder='CODIGO POSTAL'
                 id='postalCode'
                 register={register}
-                type='text'
+                type='number'
                 registerOptions={{ required: true, pattern: /^(0|[1-9]\d*)(\.\d+)?$/ }}
                 errors={errors}
               />
@@ -108,12 +111,9 @@ function HeroSection({}: Props) {
       <div className='hidden lg:flex items-center justify-center   h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
 
       {/* FOOTER */}
-      <div className='hidden absolute  bg-sacbeBlue h-24 bottom-0 w-full lg:flex items-center justify-center'>
-        <h1 className='text-sacbeBeige text-7xl'>
-          UN ESFUERZO CONJUNTO CON{' '}
-          <span className='text-sacbeOrangeDarker font-bold'>TECNOLOGÍA DE VANGUARDIA</span>
-        </h1>
-      </div>
+      <SectionFooter variant='blue' textColor='beige'>
+        UN ESFUERZO CONJUNTO CON <b className='text-sacbeOrangeDarker '>TECNOLOGÍA DE VANGUARDIA</b>
+      </SectionFooter>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionLayout from './SectionLayout';
 import BenefitsCard from './BenefitsCard';
+import SectionFooter from './SectionFooter';
 
 type Props = {};
 
@@ -14,13 +15,13 @@ function BenefitsSection({}: Props) {
             <h1 className='text-8xl font-bold text-sacbeBeige leading-none'>
               MARCAMOS <span className='text-sacbeOrangeDarker'>LA DIFERENCIA</span>
             </h1>
-            <h2 className='uppercase text-6xl text-sacbeBeige leading-none'>
+            <h2 className='uppercase hidden lg:block text-6xl text-sacbeBeige leading-none'>
               Conoce todos los servicios que nos hacen únicos
             </h2>
           </div>
           {/* CARDS */}
           <div className='max-w-[1440px]    mx-auto '>
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 '>
               <BenefitsCard image='/imgs/benefitsCards/one.png'>
                 {/* Caption */}
                 <h3 className='font-bold text-3xl leading-none'>
@@ -71,7 +72,7 @@ function BenefitsSection({}: Props) {
 
           {/* Legals */}
 
-          <div className='max-w-[840px]    mx-auto '>
+          <div className='max-w-[840px]   pb-10 mx-auto '>
             <p className='font-Sintony text-center text-sm leading-none text-sacbeBeige'>
               *Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con
               una licencia de Visa U.S.A Inc. Cargos adicionales de terceros pueden aplicar, para
@@ -81,12 +82,9 @@ function BenefitsSection({}: Props) {
           </div>
         </div>
       </div>
-      <div className='hidden absolute  bg-sacbeBeige h-24 bottom-0 w-full lg:flex items-center justify-center'>
-        <h1 className='text-sacbeOrangeDarker text-7xl'>
-          UNA NUEVA FORMA{' '}
-          <span className='text-sacbeBlue font-bold'> DE ENVIAR DINERO A MÉXICO</span>
-        </h1>
-      </div>
+      <SectionFooter variant='beige' textColor='orange'>
+        UNA NUEVA FORMA <b className='text-sacbeBlue'>DE ENVIAR DINERO A MÉXICO</b>
+      </SectionFooter>
     </SectionLayout>
   );
 }

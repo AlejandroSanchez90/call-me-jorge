@@ -21,7 +21,7 @@ function DesktopMenu({}: Props) {
           </Link>
         </li>
         <li>
-          <Link className='hover:text-sacbeOrangeDarker transition-colors' href='#about-us-section'>
+          <Link className='hover:text-sacbeOrangeDarker transition-colors' href='#quoter-section'>
             Sobre nosotros
           </Link>
         </li>
