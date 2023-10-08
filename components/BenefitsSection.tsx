@@ -81,7 +81,7 @@ function BenefitsSection({}: Props) {
           </div>
         </div>
       </div>
-      <div className='hidden absolute  bg-sacbeBeige h-28 bottom-0 w-full lg:flex items-center justify-center'>
+      <div className='hidden absolute  bg-sacbeBeige h-24 bottom-0 w-full lg:flex items-center justify-center'>
         <h1 className='text-sacbeOrangeDarker text-7xl'>
           UNA NUEVA FORMA{' '}
           <span className='text-sacbeBlue font-bold'> DE ENVIAR DINERO A MÉXICO</span>

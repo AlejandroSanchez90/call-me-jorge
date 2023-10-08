@@ -22,13 +22,14 @@ function HeroSection({}: Props) {
     );
   };
   return (
-    <div className=' h-full pt-14 pb-0 lg:pb-28 w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
+    <div className=' h-full pt-14 pb-0 lg:pb-24 w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
       {/* Texto */}
       <div className='flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
           <h1 className='text-sacbeBlue text-[70px] 2xl:text-[80px] font-bold leading-[55px] 2xl:leading-[60px]'>
-            SI TE RECOMENDÓ JORGE <span className='text-sacbeOrange'>ERES DE LOS NUESTROS</span>
+            SI TE RECOMENDÓ JORGE{' '}
+            <span className='text-sacbeOrangeDarker'>ERES DE LOS NUESTROS</span>
           </h1>
           {/* List */}
           <ul className='list-disc text-sacbeBlue text-2xl  2xl:text-4xl flex flex-col ml-7 '>
@@ -107,7 +108,7 @@ function HeroSection({}: Props) {
       <div className='hidden lg:flex items-center justify-center   h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
 
       {/* FOOTER */}
-      <div className='hidden absolute  bg-sacbeBlue h-28 bottom-0 w-full lg:flex items-center justify-center'>
+      <div className='hidden absolute  bg-sacbeBlue h-24 bottom-0 w-full lg:flex items-center justify-center'>
         <h1 className='text-sacbeBeige text-7xl'>
           UN ESFUERZO CONJUNTO CON{' '}
           <span className='text-sacbeOrangeDarker font-bold'>TECNOLOGÍA DE VANGUARDIA</span>
