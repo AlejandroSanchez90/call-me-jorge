@@ -3,6 +3,7 @@ import BenefitsSection from '@/components/BenefitsSection';
 import StepsSection from '@/components/StepsSection';
 import QuoterSection from '@/components/QuoterSection';
 import useExchangeRate from '@/hooks/useExchangeRate';
+import TableSection from '@/components/TableSection';
 
 export default async function Home() {
   const exchangeRate = await useExchangeRate();
@@ -26,11 +27,15 @@ export default async function Home() {
         <StepsSection />
       </section>
 
-      <section
-        id='quoter-section'
-        className='min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige'
-      >
+      <section id='quoter-section' className='h-screen relative z-[0] bg-sacbeBeige '>
         <QuoterSection exchangeRate={exchangeRate} />
+      </section>
+
+      <section
+        id='table-section'
+        className=' min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige'
+      >
+        <TableSection />
       </section>
     </main>
   );

@@ -24,6 +24,7 @@ module.exports = {
         sacbeOrange: '#E9993E',
         sacbeOrangeDarker: '#CA8923',
         sacbeBlue: '#114550',
+        sacbeBlueLighter: '#317C82',
         sacbeBeige: '#FFF6D2',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

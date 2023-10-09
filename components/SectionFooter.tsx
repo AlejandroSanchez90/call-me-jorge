@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import React, { Children } from 'react';
 
 type Props = {
-  variant?: 'orange' | 'blue' | 'beige';
+  variant?: 'orange' | 'blue' | 'beige' | 'lightBlue';
   textColor?: 'orange' | 'blue' | 'beige';
   classNameContainer?: string;
   classNameText?: string;
@@ -22,6 +22,7 @@ function SectionFooter({
         `hidden absolute  bg-sacbeOrangeDarker h-footer-height bottom-0 w-full lg:flex items-center justify-center`,
         variant === 'blue' && 'bg-sacbeBlue',
         variant === 'beige' && 'bg-sacbeBeige',
+        variant === 'lightBlue' && 'bg-sacbeBlueLighter',
         classNameContainer,
       )}
     >

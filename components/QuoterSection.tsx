@@ -12,7 +12,7 @@ type Props = {
 
 function QuoterSection({ exchangeRate }: Props) {
   return (
-    <div className=' h-full  pb-0 lg:pb-footer-padding w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
+    <div className=' h-full  pb-0 lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center'>
       {/* Texto */}
       <div className='flex items-center justify-center bg-sacbeBeige h-full w-1/2 lg:pt-14'>
         <div className=' max-w-[35rem] flex justify-center items-start flex-col gap-3 2xl:gap-5 h-full w-full px-2 2xl:px-0 '>
@@ -27,9 +27,9 @@ function QuoterSection({ exchangeRate }: Props) {
           </div>
         </div>
       </div>
-      <div className='hidden lg:flex items-center justify-center lg:pt-14  h-full w-1/2 bg-quoter-img  bg-no-repeat bg-top  bg-cover '>
+      {/* COTIZADOR */}
+      <div className='lg:flex items-center justify-center lg:pt-14  h-full w-1/2 lg:bg-quoter-img  bg-no-repeat bg-top  bg-cover '>
         <div className='h-full w-full relative flex items-center justify-center'>
-          {/* COTIZADOR */}
           <Quoter exchangeRate={exchangeRate} />
           {/* FOOTER */}
           <div className='absolute bottom-8 text-white'>
