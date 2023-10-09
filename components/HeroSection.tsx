@@ -25,9 +25,9 @@ function HeroSection({}: Props) {
     toast.success('Formulario enviado con éxito');
   };
   return (
-    <div className=' h-full pt-14 pb-0 lg:pb-footer-padding w-ful  flex flex-col-reverse lg:flex-row items-center justify-center'>
+    <div className=' h-full pt-14 pb-0 lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center'>
       {/* Texto */}
-      <div className='flex items-center justify-center bg-sacbeBeige h-full w-full'>
+      <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
           <h1 className='text-sacbeBlue text-[70px] 2xl:text-[80px] font-bold leading-[55px] 2xl:leading-[60px]'>
@@ -98,7 +98,7 @@ function HeroSection({}: Props) {
               </div>
             </div>
             <div className='absolute top-[100%]'>
-              <p className='text-xs md:sm max-w-md font-Sintony mt-5'>
+              <p className='text-xs md:sm max-w-md font-Sintony mt-5 text-sacbeBlue'>
                 *Aplica para personas sin SSN disponible pero que pueden proporcionar formas
                 alternas de identificación. **Para más información acerca de tasas y tarifas ver el
                 Contrato del Titular de la Tarjeta Sacbé Visa™
@@ -108,8 +108,30 @@ function HeroSection({}: Props) {
         </div>
       </div>
       {/*  */}
-      <div className='hidden lg:flex items-center justify-center   h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
+      <div className=' lg:flex items-center justify-center   h-[50vh] lg:h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
 
+      {/* Mobile */}
+      <div className='lg:hidden flex  gap-3  px-3 py-4 w-full  flex-col items-center justify-center'>
+        <h1 className='max-w-[18rem] mx-auto text-4xl font-bold text-sacbeOrange text-center leading-none'>
+          <span className='text-sacbeBlue'>SI TE RECOMENDÓ JORGE</span> ERES DE LOS NUESTROS
+        </h1>
+        <ul className=' text-sacbeBlue text-2xl   flex flex-col gap-0  text-center'>
+          <li className='leading-[29px]'>&#xB7; ABRE UNA CUENTA SACBÉ EN USA SIN SSN* &#xB7;</li>
+          <li className='leading-[29px]'>
+            &#xB7; RECIBE UNA TARJETA DE DÉBITO PREPAGADA VISA™ &#xB7;
+          </li>
+          <li className='leading-[29px]'>
+            &#xB7; ENVIA DINERO AL MEJOR PRECIO DEL MERCADO** &#xB7;
+          </li>
+        </ul>
+        <ButtonRound label='Descargar' className='max-w-[18rem] p-4 font-bold' />
+
+        <p className='text-[10px] font-Sintony max-w-[18rem] text-center pb-1 text-sacbeBlue'>
+          *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de
+          identificación. **Para más información acerca de tasas y tarifas ver el Contrato del
+          Titular de la Tarjeta Sacbé Visa™
+        </p>
+      </div>
       {/* FOOTER */}
       <SectionFooter variant='blue' textColor='beige'>
         UN ESFUERZO CONJUNTO CON <b className='text-sacbeOrangeDarker '>TECNOLOGÍA DE VANGUARDIA</b>

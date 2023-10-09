@@ -12,7 +12,7 @@ function BenefitsSection({}: Props) {
         <div className='flex flex-col w-full gap-10'>
           {/* HEADER */}
           <div className='flex items-center flex-col'>
-            <h1 className='text-8xl font-bold text-sacbeBeige leading-none'>
+            <h1 className='text-6xl text-center w-[250px] lg:w-fit  lg:text-8xl font-bold text-sacbeBeige leading-none'>
               MARCAMOS <span className='text-sacbeOrangeDarker'>LA DIFERENCIA</span>
             </h1>
             <h2 className='uppercase hidden lg:block text-6xl text-sacbeBeige leading-none'>
@@ -73,7 +73,7 @@ function BenefitsSection({}: Props) {
           {/* Legals */}
 
           <div className='max-w-[840px]   pb-10 mx-auto '>
-            <p className='font-Sintony text-center text-sm leading-none text-sacbeBeige'>
+            <p className='font-Sintony text-center text-[10px] px-2 lg:px-0 lg:text-sm leading-none text-sacbeBeige '>
               *Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con
               una licencia de Visa U.S.A Inc. Cargos adicionales de terceros pueden aplicar, para
               más información ver el Anexo de tarifas y cargos. **Válido para comercios y

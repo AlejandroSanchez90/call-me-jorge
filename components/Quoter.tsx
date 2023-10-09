@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import { SubmitHandler, set, useForm } from 'react-hook-form';
 import InputSacbe from './Input/InputSacbe';
 import ButtonRound from './ButtonRound';
 
@@ -13,7 +13,6 @@ export type QuoterInputs = {
 function Quoter({ exchangeRate }: Props) {
   const [usCurrent, setUsCurrent] = useState('');
   const [mxCurrent, setMxCurrent] = useState('');
-  console.log(exchangeRate);
 
   const {
     register,
@@ -28,29 +27,34 @@ function Quoter({ exchangeRate }: Props) {
   const mxInput = watch('mxInput');
 
   useEffect(() => {
+    console.log('mxInput', mxInput);
+
     if (mxInput > 0) {
-      const exchange = (mxInput / parseFloat(exchangeRate)).toFixed(2);
-      setUsCurrent(exchange?.toString());
+      const exchange = mxInput / Number(exchangeRate);
+      setUsCurrent((Math.round(exchange * 1e2) / 1e2).toString());
     } else if (mxInput <= 0) {
       setUsCurrent('');
       setMxCurrent('');
     }
     setMxCurrent(mxInput?.toString());
-  }, [exchangeRate, mxInput, reset, setValue]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [exchangeRate, mxInput]);
 
   useEffect(() => {
     if (usInput > 0) {
-      const exchange = (usInput * parseFloat(exchangeRate)).toFixed(2);
-      setMxCurrent(exchange?.toString());
+      const exchange = usInput * Number(exchangeRate);
+      setMxCurrent((Math.round(exchange * 1e2) / 1e2).toString());
     } else if (usInput <= 0) {
       setUsCurrent('');
       setMxCurrent('');
     }
     setUsCurrent(usInput?.toString());
-  }, [exchangeRate, usInput, setValue, reset]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [exchangeRate, usInput]);
 
   const onSubmit: SubmitHandler<QuoterInputs> = (data) => {
-    alert(`FORM ES VALIDO! MX: ${data.mxInput}, US: ${data.usInput}`);
+    alert(data.mxInput + ' ' + data.usInput);
   };
 
   const handleFocus = (e: any) => {
@@ -58,7 +62,7 @@ function Quoter({ exchangeRate }: Props) {
   };
   return (
     <div className=' bg-sacbeBeige  overflow-hidden rounded-[20px] '>
-      <form action='' className='p-5 flex flex-col gap-5' onSubmit={handleSubmit(onSubmit)}>
+      <form action='' className='p-8 flex flex-col gap-5' onSubmit={handleSubmit(onSubmit)}>
         {/* INPUT */}
         <div className=''>
           <label htmlFor='mxInput' className='font-Sintony font-bold text-sacbeBlue'>
@@ -75,6 +79,7 @@ function Quoter({ exchangeRate }: Props) {
               className='peer'
               value={mxCurrent?.toString()}
               onFocus={(e) => handleFocus(e)}
+              step='0.01'
               registerOptions={{
                 required: true,
               }}
@@ -100,6 +105,7 @@ function Quoter({ exchangeRate }: Props) {
               className='peer'
               value={usCurrent?.toString()}
               onFocus={(e) => handleFocus(e)}
+              step='0.01'
               registerOptions={{
                 required: true,
               }}

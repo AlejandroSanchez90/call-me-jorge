@@ -10,7 +10,7 @@ type Props = {
 function BenefitsCard({ children, image }: Props) {
   return (
     <div className='bg-sacbeBeige rounded-md hover:scale-110 hover:shadow-md   transition overflow-hidden'>
-      <div className='flex  transition-all  h-full flex-col max-w-[275px] '>
+      <div className='flex  transition-all  h-full flex-col max-w-[250px] lg:max-w-[250px] '>
         {/* Image */}
         <div className='h-1/2   '>
           <Image

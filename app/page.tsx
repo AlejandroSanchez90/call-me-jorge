@@ -4,6 +4,7 @@ import StepsSection from '@/components/StepsSection';
 import QuoterSection from '@/components/QuoterSection';
 import useExchangeRate from '@/hooks/useExchangeRate';
 import TableSection from '@/components/TableSection';
+import MobileForm from '@/components/MobileForm';
 
 export default async function Home() {
   const exchangeRate = await useExchangeRate();
@@ -11,6 +12,10 @@ export default async function Home() {
     <main className=''>
       <section id='hero-section' className='min-h-screen lg:h-screen  relative z-[0] bg-sacbeBeige'>
         <HeroSection />
+      </section>
+
+      <section id='benefits-section' className=' lg:hidden  relative z-[0] bg-sacbeBeige'>
+        <MobileForm />
       </section>
 
       <section
@@ -27,7 +32,10 @@ export default async function Home() {
         <StepsSection />
       </section>
 
-      <section id='quoter-section' className='h-screen relative z-[0] bg-sacbeBeige '>
+      <section
+        id='quoter-section'
+        className='min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige '
+      >
         <QuoterSection exchangeRate={exchangeRate} />
       </section>
 
