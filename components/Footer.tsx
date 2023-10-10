@@ -29,7 +29,7 @@ function Footer({}: Props) {
               height={100}
               src={'/imgs/footer/logo-footer.png'}
               alt='logo sacbe'
-              className='object-cover'
+              className='object-cover w-[150px] lg:w-[200px]'
             />
           </div>
           {/* Términos de uso */}
@@ -108,13 +108,13 @@ function Footer({}: Props) {
                 height={75}
                 src={'/imgs/footer/logo-footer.png'}
                 alt='logo sacbe'
-                className='object-cover'
+                className='object-cover w-[100px] lg:w-[150px]'
               />
             </div>
             <div className=''>
               <button
                 onClick={handleLanguage}
-                className='text-sacbeBlue bg-sacbeBeige py-1 px-2 rounded-full font-bold text-xs'
+                className='text-sacbeBlue bg-sacbeBeige py-1 px-2 rounded-full font-bold text-[11px] lg:text-xs'
               >
                 {language}
               </button>
