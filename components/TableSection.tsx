@@ -9,7 +9,7 @@ type Props = {};
 function TableSection({}: Props) {
   return (
     <SectionLayout>
-      <div className=' flex flex-col lg:flex-row items-center justify-center h-full w-full gap-5 lg:gap-0 px-2 lg:px-0 pb-14 lg:pb-0'>
+      <div className=' flex flex-col lg:flex-row items-center justify-center h-full w-full gap-5 lg:gap-0 px-2 lg:px-0 pb-10 lg:pb-0'>
         {/* TEXT */}
         <div className='w-1/2 h-full flex items-center justify-center '>
           <div className='h-full flex items-center justify-center '>

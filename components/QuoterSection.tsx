@@ -14,7 +14,7 @@ function QuoterSection({ exchangeRate }: Props) {
   return (
     <div className=' h-full   lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center relative pb-10  gap-5 lg:gap-0'>
       {/* Texto */}
-      <div className='flex items-center justify-center bg-sacbeBeige h-full w-[80%] lg:w-1/2 pt-7 lg:pt-14'>
+      <div className='flex items-center justify-center bg-sacbeBeige h-full w-[80%] lg:w-1/2 pt-10 lg:pt-14'>
         <div className=' flex justify-center items-center  gap-3 2xl:gap-5 h-full  px-2 2xl:px-0 '>
           {/* Title */}
           <div className=' '>
