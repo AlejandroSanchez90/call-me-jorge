@@ -31,8 +31,7 @@ function HeroSection({}: Props) {
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
           <h1 className='text-sacbeBlue text-[70px] 2xl:text-[80px] font-bold leading-[55px] 2xl:leading-[60px]'>
-            SI TE RECOMENDÓ JORGE{' '}
-            <span className='text-sacbeOrangeDarker'>ERES DE LOS NUESTROS</span>
+            SI TE RECOMENDÓ JORGE <span className='text-sacbeOrange'>ERES DE LOS NUESTROS</span>
           </h1>
           {/* List */}
           <ul className='list-disc text-sacbeBlue text-2xl  2xl:text-4xl flex flex-col ml-7 '>
@@ -124,9 +123,9 @@ function HeroSection({}: Props) {
             &#xB7; ENVIA DINERO AL MEJOR PRECIO DEL MERCADO** &#xB7;
           </li>
         </ul>
-        <ButtonRound label='Descargar' className='max-w-[18rem] p-4 font-bold' />
+        <ButtonRound label='Descargar' className='peer max-w-[18rem] p-4 font-bold' />
 
-        <p className='text-[10px] font-Sintony max-w-[18rem] text-center pb-1 text-sacbeBlue'>
+        <p className='text-[10px] font-Sintony max-w-[18rem]  text-center pb-1 text-sacbeBlue'>
           *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de
           identificación. **Para más información acerca de tasas y tarifas ver el Contrato del
           Titular de la Tarjeta Sacbé Visa™

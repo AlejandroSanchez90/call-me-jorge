@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { SubmitHandler, set, useForm } from 'react-hook-form';
 import InputSacbe from './Input/InputSacbe';
 import ButtonRound from './ButtonRound';
@@ -10,10 +10,12 @@ export type QuoterInputs = {
   mxInput: number;
   usInput: number;
 };
+
+type Currency = 'usInput' | 'mxInput' | '';
 function Quoter({ exchangeRate }: Props) {
   const [usCurrent, setUsCurrent] = useState('');
   const [mxCurrent, setMxCurrent] = useState('');
-
+  const enabledInput = useRef<Currency>('');
   const {
     register,
     handleSubmit,
@@ -29,7 +31,7 @@ function Quoter({ exchangeRate }: Props) {
   useEffect(() => {
     console.log('mxInput', mxInput);
 
-    if (mxInput > 0) {
+    if (mxInput > 0 && enabledInput.current === 'mxInput') {
       const exchange = mxInput / Number(exchangeRate);
       setUsCurrent((Math.round(exchange * 1e2) / 1e2).toString());
     } else if (mxInput <= 0) {
@@ -41,7 +43,7 @@ function Quoter({ exchangeRate }: Props) {
   }, [exchangeRate, mxInput]);
 
   useEffect(() => {
-    if (usInput > 0) {
+    if (usInput > 0 && enabledInput.current === 'usInput') {
       const exchange = usInput * Number(exchangeRate);
       setMxCurrent((Math.round(exchange * 1e2) / 1e2).toString());
     } else if (usInput <= 0) {
@@ -58,6 +60,9 @@ function Quoter({ exchangeRate }: Props) {
   };
 
   const handleFocus = (e: any) => {
+    enabledInput.current = e.target.id;
+    console.log('enabledInput', enabledInput.current);
+
     e.target.select();
   };
   return (
