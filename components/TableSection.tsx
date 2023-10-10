@@ -45,7 +45,7 @@ function TableSection({}: Props) {
 
         {/* TABLE */}
 
-        <div className='w-[90%] lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 px-5'>
+        <div className='w-full lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 '>
           <Image
             src={'/imgs/table/table-sp.svg'}
             width={700}
@@ -69,7 +69,7 @@ function TableSection({}: Props) {
             cargar tiempo aire, y pagar servicios.
           </p>
         </div>
-        <p className='font-Sintony text-[8px] text-center w-[80%] mt-5 lg:hidden'>
+        <p className='font-Sintony text-[8px] text-center w-[80%] mt-5 lg:hidden text-sacbeBlue'>
           *Este cuadro comparativo es meramente informativo y se actualiza constantemente, por lo
           que está sujeto a cambios sin previo aviso. **Aplica para personas sin SSN disponible pero
           que pueden proporcionar formas alternas de identificación.

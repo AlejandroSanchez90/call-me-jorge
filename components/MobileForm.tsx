@@ -24,7 +24,7 @@ function MobileForm({}: Props) {
     toast.success('Formulario enviado con éxito');
   };
   return (
-    <div className=' flex h-full w-[80%] mx-auto items-center justify-center flex-col gap-8 pt-14 pb-14'>
+    <div className=' flex h-full w-[80%] mx-auto items-center justify-center flex-col gap-8 pt-10 pb-7'>
       <div className=''>
         <h1 className='text-3xl font-bold text-center px-4 leading-none  text-sacbeBlue'>
           <span className='text-sacbeOrange'>

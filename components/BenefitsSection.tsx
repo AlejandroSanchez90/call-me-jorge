@@ -8,7 +8,7 @@ type Props = {};
 function BenefitsSection({}: Props) {
   return (
     <SectionLayout>
-      <div className='h-full w-full  bg-sacbeBlue flex items-center justify-center pb-14 lg:pb-0'>
+      <div className='h-full w-full  bg-sacbeBlue flex items-center justify-center pb-10 lg:pb-0'>
         <div className='flex flex-col w-full gap-10'>
           {/* HEADER */}
           <div className='flex items-center flex-col'>
@@ -72,7 +72,7 @@ function BenefitsSection({}: Props) {
 
           {/* Legals */}
 
-          <div className='max-w-[840px]   pb-10 mx-auto '>
+          <div className='max-w-[330px] lg:max-w-[840px]    mx-auto '>
             <p className='font-Sintony text-center text-[10px] px-2 lg:px-0 lg:text-sm leading-none text-sacbeBeige '>
               *Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con
               una licencia de Visa U.S.A Inc. Cargos adicionales de terceros pueden aplicar, para

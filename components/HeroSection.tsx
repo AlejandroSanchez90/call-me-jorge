@@ -25,7 +25,7 @@ function HeroSection({}: Props) {
     toast.success('Formulario enviado con éxito');
   };
   return (
-    <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-0'>
+    <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-10'>
       {/* Texto */}
       <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
