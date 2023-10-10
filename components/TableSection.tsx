@@ -45,7 +45,7 @@ function TableSection({}: Props) {
 
         {/* TABLE */}
 
-        <div className='w-full lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 '>
+        <div className='w-full lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 px-2'>
           <Image
             src={'/imgs/table/table-sp.svg'}
             width={700}
@@ -60,7 +60,7 @@ function TableSection({}: Props) {
         </div>
 
         {/* Mobile text */}
-        <div className='flex flex-col lg:hidden gap-3'>
+        <div className='flex flex-col lg:hidden gap-3 px-5'>
           <p className='font-Sintony font-bold text-md  text-sacbeBlue leading-none text-center'>
             Sin Social Security <br /> Number (SSN) ni Green Card*{' '}
           </p>
