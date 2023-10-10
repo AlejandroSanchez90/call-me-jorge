@@ -18,28 +18,19 @@ export default async function Home() {
         <MobileForm />
       </section>
 
-      <section
-        id='benefits-section'
-        className='min-h-screen lg:h-screen relative z-[0] bg-sacbeBlue'
-      >
+      <section id='benefits-section' className=' lg:h-screen relative z-[0] bg-sacbeBlue'>
         <BenefitsSection />
       </section>
 
-      <section id='steps-section' className=' h-screen lg:h-screen relative z-[0] bg-sacbeBeige '>
+      <section id='steps-section' className='  lg:h-screen relative z-[0] bg-sacbeBeige '>
         <StepsSection />
       </section>
 
-      <section
-        id='quoter-section'
-        className='min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige '
-      >
+      <section id='quoter-section' className=' lg:h-screen relative z-[0] bg-sacbeBeige '>
         <QuoterSection exchangeRate={exchangeRate} />
       </section>
 
-      <section
-        id='table-section'
-        className=' min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige'
-      >
+      <section id='table-section' className='  lg:h-screen relative z-[0] bg-sacbeBeige'>
         <TableSection />
       </section>
     </main>

@@ -9,7 +9,7 @@ type Props = {};
 function TableSection({}: Props) {
   return (
     <SectionLayout>
-      <div className=' flex flex-col lg:flex-row items-center justify-center h-full w-full gap-5 lg:gap-0 px-2 lg:px-0'>
+      <div className=' flex flex-col lg:flex-row items-center justify-center h-full w-full gap-5 lg:gap-0 px-2 lg:px-0 pb-14 lg:pb-0'>
         {/* TEXT */}
         <div className='w-1/2 h-full flex items-center justify-center '>
           <div className='h-full flex items-center justify-center '>
@@ -69,6 +69,11 @@ function TableSection({}: Props) {
             cargar tiempo aire, y pagar servicios.
           </p>
         </div>
+        <p className='font-Sintony text-[8px] text-center w-[80%] mt-5 lg:hidden'>
+          *Este cuadro comparativo es meramente informativo y se actualiza constantemente, por lo
+          que está sujeto a cambios sin previo aviso. **Aplica para personas sin SSN disponible pero
+          que pueden proporcionar formas alternas de identificación.
+        </p>
       </div>
 
       <SectionFooter variant='lightBlue' textColor='beige'>

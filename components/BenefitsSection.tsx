@@ -8,7 +8,7 @@ type Props = {};
 function BenefitsSection({}: Props) {
   return (
     <SectionLayout>
-      <div className='h-full w-full  bg-sacbeBlue flex items-center justify-center'>
+      <div className='h-full w-full  bg-sacbeBlue flex items-center justify-center pb-14 lg:pb-0'>
         <div className='flex flex-col w-full gap-10'>
           {/* HEADER */}
           <div className='flex items-center flex-col'>

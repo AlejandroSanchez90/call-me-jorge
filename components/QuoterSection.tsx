@@ -12,7 +12,7 @@ type Props = {
 
 function QuoterSection({ exchangeRate }: Props) {
   return (
-    <div className=' h-full  pb-0 lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center relative gap-5 lg:gap-0'>
+    <div className=' h-full   lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center relative pb-14  gap-5 lg:gap-0'>
       {/* Texto */}
       <div className='flex items-center justify-center bg-sacbeBeige h-full w-[80%] lg:w-1/2 pt-14'>
         <div className=' flex justify-center items-center  gap-3 2xl:gap-5 h-full  px-2 2xl:px-0 '>
@@ -34,8 +34,13 @@ function QuoterSection({ exchangeRate }: Props) {
           {/* FOOTER */}
         </div>
       </div>
-
-      <div className='absolute  w-[32rem] left-[50%] lg:left-[75%] -bottom-[15%] lg:bottom-[12%] -translate-x-[25%] lg:-translate-x-[50%] text-white z-50'>
+      {/* FOOTER MOBILE */}
+      <p className='lg:hidden max-w-2xl w-[80%] lg:w-full font-Sintony text-center text-[9px] lg:text-xs text-sacbeBlue lg:text-sacbeBeige'>
+        *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
+        constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
+        sobre tasas o tarifas ver el Contrato del Titular de Sacbé.
+      </p>
+      <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[12%]  lg:-translate-x-[50%] text-white z-50'>
         <p className='max-w-2xl w-1/2 lg:w-full font-Sintony text-center text-[9px] lg:text-xs text-sacbeBlue lg:text-sacbeBeige'>
           *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
           constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
