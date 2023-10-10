@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { SubmitHandler, set, useForm } from 'react-hook-form';
 import InputSacbe from './Input/InputSacbe';
 import ButtonRound from './ButtonRound';
+import toast from 'react-hot-toast';
 
 type Props = {
   exchangeRate: string;
@@ -56,7 +57,7 @@ function Quoter({ exchangeRate }: Props) {
   }, [exchangeRate, usInput]);
 
   const onSubmit: SubmitHandler<QuoterInputs> = (data) => {
-    alert(data.mxInput + ' ' + data.usInput);
+    toast.success(`Envias ${usCurrent} USD y recibes ${mxCurrent} MXN`);
   };
 
   const handleFocus = (e: any) => {

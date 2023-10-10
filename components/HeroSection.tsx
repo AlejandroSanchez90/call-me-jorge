@@ -4,6 +4,7 @@ import ButtonRound from './ButtonRound';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import SectionFooter from './SectionFooter';
 import toast from 'react-hot-toast';
+import ButtonDownload from './ButtonDownload';
 type Props = {};
 export type HeroInputs = {
   name: string;
@@ -25,7 +26,7 @@ function HeroSection({}: Props) {
     toast.success('Formulario enviado con éxito');
   };
   return (
-    <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-10'>
+    <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-10 '>
       {/* Texto */}
       <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
@@ -123,7 +124,7 @@ function HeroSection({}: Props) {
             &#xB7; ENVIA DINERO AL MEJOR PRECIO DEL MERCADO** &#xB7;
           </li>
         </ul>
-        <ButtonRound label='Descargar' className='peer max-w-[18rem] p-4 font-bold' />
+        <ButtonDownload label='Descargar' />
 
         <p className='text-[10px] font-Sintony max-w-[18rem]  text-center pb-1 text-sacbeBlue'>
           *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de

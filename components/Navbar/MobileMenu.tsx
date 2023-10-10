@@ -10,11 +10,12 @@ import {
 import logo from '@/public/imgs/logo.svg';
 import Image from 'next/image';
 import { X } from 'lucide-react';
+import useRoutes from '@/hooks/useRoutes';
 type Props = {};
 
 function MobilMenu({}: Props) {
   const mobileMenu = useMobilMenu();
-
+  const routes = useRoutes();
   return (
     <div className='block lg:hidden h-full'>
       <div className='flex items-center gap-5 justify-center'>
@@ -35,17 +36,17 @@ function MobilMenu({}: Props) {
         </button>
       </div>
       <Sheet open={mobileMenu.isOpen}>
-        <SheetContent className='bg-sacbeBlue'>
+        <SheetContent className='bg-sacbeBlue '>
           <SheetHeader>
             <SheetTitle className=' flex justify-between items-center'>
-              <Image height={200} width={250} src={logo} alt='logo' />
+              <Image height={200} width={250} src={logo} alt='logo' className='pb-3' />
               <div className='flex items-center justify-center'>
                 <button onClick={mobileMenu.onClose}>
                   <X size={35} className='stroke-sacbeBeige' />
                 </button>
               </div>
             </SheetTitle>
-            <SheetDescription className='bg-sacbeOrange flex items-center justify-center text-2xl'>
+            <SheetDescription className='bg-sacbeOrange flex  items-center justify-center h-full text-2xl'>
               PLACE HOLDER
             </SheetDescription>
           </SheetHeader>
