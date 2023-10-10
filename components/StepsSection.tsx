@@ -8,16 +8,16 @@ type Props = {};
 function StepsSection({}: Props) {
   return (
     <SectionLayout>
-      <div className='flex flex-col w-full gap-4'>
+      <div className='flex flex-col h-full justify-center w-full gap-4'>
         {/* Header */}
         <div className='flex items-center flex-col'>
-          <h1 className='text-[80px] text-center font-bold text-sacbeOrangeDarker leading-[80px] uppercase'>
+          <h1 className='text-5xl lg:text-[80px] text-center font-bold text-sacbeOrangeDarker leading-none uppercase'>
             envía dinero <br />
             <span className='text-sacbeBlue'>a México* en minutos</span>
           </h1>
         </div>
         {/* Squares */}
-        <div className='grid grid-cols-3 max-w-[1440px] mx-auto gap-5'>
+        <div className='hidden lg:grid grid-cols-3 max-w-[1440px] mx-auto gap-5'>
           {/* SQUARE */}
           <div className='relative border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-center text-center p-2 pt-12 gap-4'>
             <h1 className='uppercase text-sacbeOrangeDarker text-6xl font-bold leading-[55px]'>
@@ -90,18 +90,32 @@ function StepsSection({}: Props) {
             </div>
           </div>
         </div>
+        {/* MOBILE */}
+        <div className='flex flex-col items-center gap-3 lg:hidden px-3'>
+          <div className=''>
+            <Image
+              src={'/imgs/steps/logos-mobile.svg'}
+              width={500}
+              height={500}
+              alt='sacbe partners'
+            />
+          </div>
+          <p className='font-Sintony text-sacbeBlue font-bold text-center w-[80%] leading-none'>
+            Envía dinero desde Estados Unidos por sólo $1.50*** a cualquier parte de México, o
+            fondea tu Cuenta Sacbé con tus tarjetas de crédito, débito y hasta con efectivo.
+          </p>
+        </div>
+        {/* FOOTER */}
         <div className=''>
-          <p className='text-center font-Sintony text-[10px] max-w-6xl mx-auto mt-5 footer'>
-            *El destinatario deberá aplicar a una cuenta Sacbé en México. En México, las cuentas con
+          <p className='text-center font-Sintony text-[6px]  lg:text-[10px] w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer '>
+            *El destinatario deberá aplicar a una Cuenta Sacbé en México. En México, las cuentas con
             tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de
             C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard
             International. **Servicio proporcionado por la Red Greendot, Los logos de terceros no
             son propiedad de Metropolitan Commercial Bank o de Sacbe Payments. ***Aplica cargo de
             Transferencia internacional directa $1.50. El tipo de cambio aplicado se muestra al
             momento de la transacción. Para mas información sobre tasas o tarifas ver el contrato
-            del titular de Sacbé. ****En México, las cuentas con tarjeta Sacbé están patrocinadas
-            por separado por Sacbé Payments de México, S.A.P.I de C.V. Institución de Fondos de Pago
-            Electrónico conforme a una licencia de Mastercard International.
+            del titular de Sacbé.
           </p>
         </div>
       </div>

@@ -25,10 +25,7 @@ export default async function Home() {
         <BenefitsSection />
       </section>
 
-      <section
-        id='steps-section'
-        className=' min-h-screen lg:h-screen relative z-[0] bg-sacbeBeige'
-      >
+      <section id='steps-section' className=' h-screen lg:h-screen relative z-[0] bg-sacbeBeige '>
         <StepsSection />
       </section>
 

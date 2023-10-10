@@ -9,20 +9,20 @@ type Props = {};
 function TableSection({}: Props) {
   return (
     <SectionLayout>
-      <div className=' flex items-center justify-center h-full w-full  '>
+      <div className=' flex flex-col lg:flex-row items-center justify-center h-full w-full gap-5 lg:gap-0 px-2 lg:px-0'>
         {/* TEXT */}
         <div className='w-1/2 h-full flex items-center justify-center '>
           <div className='h-full flex items-center justify-center '>
             <div className=' flex h-full justify-center items-start text-left w-full flex-col gap-7 '>
-              <h1 className='uppercase leading-none text-8xl font-bold text-sacbeBlue w-[22rem]'>
+              <h1 className='uppercase leading-none text-5xl lg:text-8xl font-bold text-sacbeBlue w-[12rem] lg:w-[22rem] text-center lg:text-left'>
                 REGÍSTRATE
                 <span className='text-sacbeOrangeDarker'> EN MINUTOS</span>
               </h1>
-              <div className='flex flex-col gap-2'>
-                <p className='font-Sintony font-bold text-xl text-sacbeBlue leading-none'>
-                  No necesitas Social Security <br /> Number (SSN) ni Green Card*{' '}
+              <div className='hidden lg:flex flex-col gap-2'>
+                <p className='font-Sintony font-bold text-md lg:text-xl text-sacbeBlue leading-none'>
+                  Sin Social Security <br /> Number (SSN) ni Green Card*{' '}
                 </p>
-                <p className='font-Sintony text-xl text-sacbeBlue leading-none'>
+                <p className='font-Sintony text-md lg:text-xl text-sacbeBlue leading-none'>
                   Una solución financiera en Estados Unidos <br /> donde podrás recibir pagos,
                   enviar dinero,
                   <br /> cargar tiempo aire, y pagar servicios.
@@ -30,7 +30,7 @@ function TableSection({}: Props) {
               </div>
 
               {/* Legals */}
-              <div className=''>
+              <div className='hidden lg:block'>
                 <p className='font-Sintony text-sacbeBlue leading-none text-xs mt-8'>
                   *Aplica para personas sin SSN disponible pero que pueden proporcionar formas{' '}
                   <br />
@@ -45,7 +45,7 @@ function TableSection({}: Props) {
 
         {/* TABLE */}
 
-        <div className='w-1/2 flex h-full justify-center items-center flex-col gap-3 px-5'>
+        <div className='w-[90%] lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 px-5'>
           <Image
             src={'/imgs/table/table-sp.svg'}
             width={700}
@@ -53,9 +53,20 @@ function TableSection({}: Props) {
             alt=''
             className=' object-cover'
           />
-          <p className='text-center font-Sintony font-bold text-sm text-sacbeBlue'>
+          <p className='hidden lg:block text-center font-Sintony font-bold text-sm text-sacbeBlue'>
             Para tu registro necesitarás una identificación con foto, más <br /> un comprobante de
             domicilio bajo tu nombre o algún familiar.
+          </p>
+        </div>
+
+        {/* Mobile text */}
+        <div className='flex flex-col lg:hidden gap-3'>
+          <p className='font-Sintony font-bold text-md  text-sacbeBlue leading-none text-center'>
+            Sin Social Security <br /> Number (SSN) ni Green Card*{' '}
+          </p>
+          <p className='font-Sintony text-md  text-sacbeBlue leading-none text-center'>
+            Una solución financiera en Estados Unidos donde podrás recibir pagos, enviar dinero,
+            cargar tiempo aire, y pagar servicios.
           </p>
         </div>
       </div>

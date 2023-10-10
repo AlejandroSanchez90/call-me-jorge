@@ -61,14 +61,14 @@ function Quoter({ exchangeRate }: Props) {
     e.target.select();
   };
   return (
-    <div className=' bg-sacbeBeige  overflow-hidden rounded-[20px] '>
+    <div className=' bg-sacbeBeige  overflow-hidden rounded-[20px] border-sacbeBlue border-[3px] lg:border-0'>
       <form action='' className='p-8 flex flex-col gap-5' onSubmit={handleSubmit(onSubmit)}>
         {/* INPUT */}
         <div className=''>
           <label htmlFor='mxInput' className='font-Sintony font-bold text-sacbeBlue'>
             SI NECESITA
           </label>
-          <div className='flex h-full  group '>
+          <div className='flex h-10 lg:h-full  group '>
             <InputSacbe
               variant='regular'
               errors={errors}
@@ -84,7 +84,7 @@ function Quoter({ exchangeRate }: Props) {
                 required: true,
               }}
             />
-            <div className='h-full w-[80px] transition-colors peer-focus:bg-sacbeBlue bg-sacbeOrangeDarker text-3xl font-bold text-sacbeBeige py-2  rounded-lg text-center'>
+            <div className='h-full w-[80px] transition-colors peer-focus:bg-sacbeBlue bg-sacbeOrangeDarker text-2xl lg:text-3xl font-bold text-sacbeBeige lg:py-2  rounded-lg text-center flex items-center justify-center'>
               MXN
             </div>
           </div>
@@ -94,7 +94,7 @@ function Quoter({ exchangeRate }: Props) {
           <label htmlFor='usInput' className='font-Sintony font-bold text-sacbeBlue'>
             TÚ ENVÍAS
           </label>
-          <div className='flex h-full  group '>
+          <div className='flex h-10 lg:h-full  group '>
             <InputSacbe
               variant='regular'
               errors={errors}
@@ -110,7 +110,7 @@ function Quoter({ exchangeRate }: Props) {
                 required: true,
               }}
             />
-            <div className='h-full w-[80px] transition-colors peer-focus:bg-sacbeBlue bg-sacbeOrangeDarker text-3xl font-bold text-sacbeBeige py-2  rounded-lg text-center'>
+            <div className='h-full w-[80px] transition-colors peer-focus:bg-sacbeBlue bg-sacbeOrangeDarker text-2xl lg:text-3xl font-bold text-sacbeBeige lg:py-2  rounded-lg text-center flex items-center justify-center'>
               USD
             </div>
           </div>

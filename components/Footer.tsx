@@ -21,7 +21,7 @@ function Footer({}: Props) {
     <div className='bg-sacbeBlue font-Sintony'>
       <div className='flex flex-col max-w-[1440px] p-10 mx-auto gap-12'>
         {/* LINKS */}
-        <div className='grid grid-cols-4 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6'>
           {/* Logo */}
           <div className=''>
             <Image
@@ -100,7 +100,7 @@ function Footer({}: Props) {
         </div>
         <hr className='border-sacbeOrangeDarker' />
         {/* LEGALS */}
-        <div className='flex flex-col gap-10 text-sacbeBeige text-xs'>
+        <div className='flex flex-col gap-10 text-sacbeBeige text-[8px] lg:text-[xs] whitespace-pre-wrap'>
           <div className='flex justify-between items-center'>
             <div className=''>
               <Image
@@ -193,7 +193,7 @@ function Footer({}: Props) {
         </div>
         {/* Image */}
         <div
-          className='flex justify-center items-center
+          className='lg:flex justify-center items-center hidden
         '
         >
           {' '}

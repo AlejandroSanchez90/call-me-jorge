@@ -67,7 +67,7 @@ function InputSacbe({
           id={id}
           placeholder={placeholder}
           className={cn(
-            `text-3xl appearance-none no-spinners transition-colors focus:border-sacbeBlue  text-sacbeBlue rounded-lg py-1 font-bold placeholder:text-sacbeBlue px-2 bg-inherit  border-[2px] border-sacbeOrangeDarker w-full font-Tungsten  outline-none decoration-transparent`,
+            `text-2xl lg:text-3xl appearance-none no-spinners transition-colors focus:border-sacbeBlue  text-sacbeBlue rounded-lg py-1 font-bold placeholder:text-sacbeBlue px-2 bg-inherit  border-[2px] border-sacbeOrangeDarker w-full font-Tungsten  outline-none decoration-transparent`,
             errors[id] && 'border-rose-800 focus:border-rose-800',
             className,
           )}
