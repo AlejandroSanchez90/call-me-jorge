@@ -11,6 +11,7 @@ import logo from '@/public/imgs/logo.svg';
 import Image from 'next/image';
 import { X } from 'lucide-react';
 import useRoutes from '@/hooks/useRoutes';
+import Link from 'next/link';
 type Props = {};
 
 function MobilMenu({}: Props) {
@@ -40,14 +41,27 @@ function MobilMenu({}: Props) {
           <SheetHeader>
             <SheetTitle className=' flex justify-between items-center'>
               <Image height={200} width={250} src={logo} alt='logo' className='pb-3' />
-              <div className='flex items-center justify-center'>
+              <div className='flex items-center justify-center '>
                 <button onClick={mobileMenu.onClose}>
                   <X size={35} className='stroke-sacbeBeige' />
                 </button>
               </div>
             </SheetTitle>
-            <SheetDescription className='bg-sacbeOrange flex  items-center justify-center h-full text-2xl'>
-              PLACE HOLDER
+            <SheetDescription className=' flex   h-screen justify-center  text-xl'>
+              <div className='h-full w-full flex pt-10 items-start justify-start '>
+                <ul className='flex flex-col gap-7'>
+                  {routes.map((route) => (
+                    <li key={route.label} className='text-left text-sacbeBeige font-Sintony'>
+                      <Link onClick={() => mobileMenu.onClose()} href={route.path}>
+                        {route.label}
+                      </Link>
+                    </li>
+                  ))}
+                  <li className='bg-sacbeBeige text-sacbeBlue w-2/3 px-1 py-1 rounded-full font-bold font-Sintony'>
+                    <Link href='#'>English</Link>
+                  </li>
+                </ul>
+              </div>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>

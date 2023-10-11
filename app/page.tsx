@@ -11,14 +11,14 @@ export default async function Home() {
   return (
     <main className=''>
       {/* HERO */}
-      <section id='hero-section' className='min-h-screen lg:h-screen  relative z-[0] bg-sacbeBeige'>
+      <section id='hero-section' className=' lg:h-screen  relative z-[0] bg-sacbeBeige'>
         <HeroSection />
       </section>
 
       {/* MOBILE FORM */}
-      <section id='benefits-section' className=' lg:hidden  relative z-[0] bg-sacbeBeige'>
+      {/* <section id='benefits-section' className=' lg:hidden  relative z-[0] bg-sacbeBeige'>
         <MobileForm />
-      </section>
+      </section> */}
 
       {/* BENEFITS */}
       <section id='benefits-section' className=' lg:h-screen relative z-[0] bg-sacbeBlue'>

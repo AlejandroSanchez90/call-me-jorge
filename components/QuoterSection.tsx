@@ -17,11 +17,11 @@ function QuoterSection({ exchangeRate }: Props) {
       <div className='flex items-center justify-center bg-sacbeBeige h-full w-[80%] lg:w-1/2 pt-10 lg:pt-14'>
         <div className=' flex justify-center items-center  gap-3 2xl:gap-5 h-full  px-2 2xl:px-0 '>
           {/* Title */}
-          <div className=' '>
-            <h1 className='text-center lg:text-left text-sacbeBlue text-5xl lg:text-8xl font-bold leading-none'>
+          <div className='flex flex-col gap-3 lg:gap-0'>
+            <h1 className='text-center lg:text-left text-sacbeBlue text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] font-bold '>
               CALCULA <br /> <span className='text-sacbeOrangeDarker'>TU ENVÍO</span>
             </h1>
-            <p className='font-bold lg:font-normal text-center lg:text-left font-Sintony text-lg  lg:text-xl text-sacbeBlue'>
+            <p className='font-bold leading-[20px] lg:font-normal text-center lg:text-left font-Sintony text-lg  lg:text-xl text-sacbeBlue'>
               Descubre lo fácil que es hacer <br /> envíos desde tu Cuenta Sacbé™
             </p>
           </div>

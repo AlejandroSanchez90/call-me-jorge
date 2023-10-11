@@ -12,8 +12,13 @@ function BenefitsSection({}: Props) {
         <div className='flex flex-col w-full gap-10'>
           {/* HEADER */}
           <div className='flex items-center flex-col'>
-            <h1 className='text-6xl text-center w-[250px] lg:w-fit  lg:text-8xl font-bold text-sacbeBeige leading-none'>
-              MARCAMOS <span className='text-sacbeOrangeDarker'>LA DIFERENCIA</span>
+            <h1 className='text-5xl leading-[45px] text-center  lg:w-fit  lg:text-8xl lg:leading-[85px] font-bold text-sacbeBeige '>
+              MARCAMOS{' '}
+              <span className='text-sacbeOrangeDarker'>
+                {' '}
+                <br />
+                LA DIFERENCIA
+              </span>
             </h1>
             <h2 className='uppercase hidden lg:block text-6xl text-sacbeBeige leading-none'>
               Conoce todos los servicios que nos hacen únicos
@@ -22,6 +27,7 @@ function BenefitsSection({}: Props) {
           {/* CARDS */}
           <div className='max-w-[1440px]    mx-auto '>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 '>
+              {/* CARD 1 */}
               <BenefitsCard image='/imgs/benefitsCards/one.png'>
                 {/* Caption */}
                 <h3 className='font-bold text-3xl leading-none'>
@@ -29,11 +35,14 @@ function BenefitsSection({}: Props) {
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Obtén tu Tarjeta Digital o solicita una{' '}
-                  <b>Tarjeta de Débito Prepagada a domicilio sin costo*</b>
+                  Obtén tu Tarjeta Digital o <br /> solicita una{' '}
+                  <b>
+                    Tarjeta de <br /> Débito Prepagada a <br /> domicilio sin costo*
+                  </b>
                 </p>
               </BenefitsCard>
 
+              {/* CARD 2 */}
               <BenefitsCard image='/imgs/benefitsCards/two.png'>
                 {/* Caption */}
                 <h3 className='font-bold text-3xl leading-none'>
@@ -41,30 +50,35 @@ function BenefitsSection({}: Props) {
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  <b>Envía dinero a tus contactos en México y USA </b>
-                  desde tu Cuenta Sacbé
+                  <b>
+                    Envía dinero a tus contactos <br /> en México y USA{' '}
+                  </b>
+                  desde tu <br /> Cuenta Sacbé
                 </p>
               </BenefitsCard>
 
+              {/* CARD 3 */}
               <BenefitsCard image='/imgs/benefitsCards/three.png'>
                 <h3 className='font-bold text-3xl leading-none'>
-                  DIRECTO A <br /> TU PUERTA
+                  USA EL MÉTODO QUE <br /> TE CONVENGA
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Obtén tu Tarjeta Digital o solicita una{' '}
-                  <b>Tarjeta de Débito Prepagada a domicilio sin costo*</b>
+                  Retira en cajeros, o{' '}
+                  <b>
+                    paga <br /> con tu tarjeta en tiendas <br /> físicas o en línea**
+                  </b>
                 </p>
               </BenefitsCard>
 
+              {/* CARD4 */}
               <BenefitsCard image='/imgs/benefitsCards/four.png'>
                 <h3 className='font-bold text-3xl leading-none'>
-                  DIRECTO A <br /> TU PUERTA
+                  HAZLO TODO EN <br /> UNA SOLA APP
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Obtén tu Tarjeta Digital o solicita una{' '}
-                  <b>Tarjeta de Débito Prepagada a domicilio sin costo*</b>
+                  Paga tus servicios o <br /> <b>recarga tiempo aire</b>
                 </p>
               </BenefitsCard>
             </div>

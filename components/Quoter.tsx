@@ -68,9 +68,9 @@ function Quoter({ exchangeRate }: Props) {
   };
   return (
     <div className=' bg-sacbeBeige  overflow-hidden rounded-[20px] border-sacbeBlue border-[3px] lg:border-0'>
-      <form action='' className='p-8 flex flex-col gap-5' onSubmit={handleSubmit(onSubmit)}>
+      <form action='' className='p-8 h-full flex flex-col gap-5' onSubmit={handleSubmit(onSubmit)}>
         {/* INPUT */}
-        <div className=''>
+        <div className='h-full'>
           <label htmlFor='mxInput' className='font-Sintony font-bold text-sacbeBlue'>
             SI NECESITA
           </label>

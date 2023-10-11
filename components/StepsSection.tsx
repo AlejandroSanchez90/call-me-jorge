@@ -11,9 +11,9 @@ function StepsSection({}: Props) {
       <div className='flex flex-col h-full justify-center w-full gap-4 pb-10 lg:pb-0'>
         {/* Header */}
         <div className='flex items-center flex-col'>
-          <h1 className='text-5xl lg:text-[80px] text-center font-bold text-sacbeOrangeDarker leading-none uppercase'>
+          <h1 className='text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] text-center font-bold text-sacbeOrangeDarker  uppercase'>
             envía dinero <br />
-            <span className='text-sacbeBlue'>a México* en minutos</span>
+            <span className='text-sacbeBlue'> a México* en minutos</span>
           </h1>
         </div>
         {/* Squares */}

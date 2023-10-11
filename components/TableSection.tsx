@@ -14,15 +14,15 @@ function TableSection({}: Props) {
         <div className='w-1/2 h-full flex items-center justify-center '>
           <div className='h-full flex items-center justify-center '>
             <div className=' flex h-full justify-center items-start text-left w-full flex-col gap-7 '>
-              <h1 className='uppercase leading-none text-5xl lg:text-8xl font-bold text-sacbeBlue w-[12rem] lg:w-[22rem] text-center lg:text-left'>
+              <h1 className='uppercase text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] font-bold text-sacbeBlue w-[12rem] lg:w-[22rem] text-center lg:text-left'>
                 REGÍSTRATE
                 <span className='text-sacbeOrangeDarker'> EN MINUTOS</span>
               </h1>
               <div className='hidden lg:flex flex-col gap-2'>
-                <p className='font-Sintony font-bold text-md lg:text-xl text-sacbeBlue leading-none'>
+                <p className='font-Sintony font-bold text-md lg:text-xl text-sacbeBlue leading-none lg:leading-[25px]'>
                   Sin Social Security <br /> Number (SSN) ni Green Card*{' '}
                 </p>
-                <p className='font-Sintony text-md lg:text-xl text-sacbeBlue leading-none'>
+                <p className='font-Sintony text-md lg:text-xl text-sacbeBlue lg:leading-[25px]'>
                   Una solución financiera en Estados Unidos <br /> donde podrás recibir pagos,
                   enviar dinero,
                   <br /> cargar tiempo aire, y pagar servicios.
@@ -69,7 +69,7 @@ function TableSection({}: Props) {
             cargar tiempo aire, y pagar servicios.
           </p>
         </div>
-        <p className='font-Sintony text-[8px] text-center w-[80%] mt-5 lg:hidden text-sacbeBlue'>
+        <p className='font-Sintony text-[8px] text-center w-[80%]  lg:hidden text-sacbeBlue'>
           *Este cuadro comparativo es meramente informativo y se actualiza constantemente, por lo
           que está sujeto a cambios sin previo aviso. **Aplica para personas sin SSN disponible pero
           que pueden proporcionar formas alternas de identificación.

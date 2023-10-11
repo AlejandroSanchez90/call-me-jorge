@@ -71,7 +71,7 @@ const SheetContent = React.forwardRef<
         {children}
         <SheetPrimitive.Close
           onClick={mobileMenu.onClose}
-          className='hidden absolute right-4 top-7 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none  disabled:pointer-events-none data-[state=open]:bg-secondary'
+          className='hidden h-full absolute right-4 top-7 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none  disabled:pointer-events-none data-[state=open]:bg-secondary'
         >
           <X className='h-10 w-10 stroke-sacbeBeige' />
           <span className='sr-only'>Close</span>

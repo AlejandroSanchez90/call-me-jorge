@@ -27,11 +27,11 @@ function HeroSection({}: Props) {
   };
   return (
     <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-10 '>
-      {/* Texto */}
+      {/* Texto  DESKTOP*/}
       <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
-        <div className='relative max-w-[35rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
+        <div className='relative max-w-[45rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
-          <h1 className='text-sacbeBlue text-[70px] 2xl:text-[80px] font-bold leading-[55px] 2xl:leading-[60px]'>
+          <h1 className='text-sacbeBlue  text-[70px] lg:text-8xl lg:leading-[85px] font-bold  '>
             SI TE RECOMENDÓ JORGE <span className='text-sacbeOrange'>ERES DE LOS NUESTROS</span>
           </h1>
           {/* List */}
@@ -111,8 +111,8 @@ function HeroSection({}: Props) {
       <div className=' lg:flex items-center justify-center   h-[50vh] lg:h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
 
       {/* Mobile */}
-      <div className='lg:hidden flex  gap-3  px-3 py-4 w-full  flex-col items-center justify-center'>
-        <h1 className='max-w-[18rem] mx-auto text-4xl font-bold text-sacbeOrange text-center leading-none'>
+      <div className='lg:hidden flex  gap-3  px-3 pt-3 w-full  flex-col items-center justify-center'>
+        <h1 className=' mx-auto text-5xl leading-[45px] font-bold text-sacbeOrange text-center '>
           <span className='text-sacbeBlue'>SI TE RECOMENDÓ JORGE</span> ERES DE LOS NUESTROS
         </h1>
         <ul className=' text-sacbeBlue text-2xl   flex flex-col gap-0  text-center'>

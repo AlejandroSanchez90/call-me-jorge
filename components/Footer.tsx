@@ -121,7 +121,7 @@ function Footer({}: Props) {
             </div>
           </div>
           {/* TEXT */}
-          <div className='flex flex-col gap-5'>
+          <div className='flex flex-col gap-5 text-xs'>
             <p>
               POR ACEPTAR O UTILIZAR ESTA TARJETA, USTED ACEPTA ESTAR OBLIGADO POR LOS TÉRMINOS Y
               CONDICIONES CONTENIDAS EN ESTE ACUERDO DEL TITULAR DE LA TARJETA Y PROGRAMA DE
@@ -130,7 +130,7 @@ function Footer({}: Props) {
               “Metropolitan Commercial Bank” y ‘Metropolitan” son marcas registradas de Metropolitan
               Commercial Bank ©2014.
             </p>
-            <p className='text-sacbeOrangeDarker text-center'>
+            <p className='text-sacbeOrange text-center'>
               PARA SERVICIO AL CLIENTE LLAMAR A Sacbé AL +1 928 237 9808. 9AM - 9PM EST / 365 días.
             </p>
 
@@ -198,14 +198,14 @@ function Footer({}: Props) {
         >
           {' '}
           <Image
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             src={'/imgs/footer/img-footer.png'}
             alt='logo sacbe'
-            className='object-cover'
+            className='object-cover pt-[10%]'
           />
         </div>
-        <div className='w-full h-[40vh]'></div>
+        <div className='w-full '></div>
       </div>
     </div>
   );
