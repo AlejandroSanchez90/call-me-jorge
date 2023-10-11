@@ -8,7 +8,7 @@ type Props = {};
 function StepsSection({}: Props) {
   return (
     <SectionLayout>
-      <div className='flex flex-col h-full justify-center w-full gap-4 pb-10 lg:pb-0'>
+      <div className='flex flex-col h-full justify-center w-full gap-2 lg:gap-4 pb-5 lg:pb-0'>
         {/* Header */}
         <div className='flex items-center flex-col'>
           <h1 className='text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] text-center font-bold text-sacbeOrangeDarker  uppercase'>
@@ -91,7 +91,7 @@ function StepsSection({}: Props) {
           </div>
         </div>
         {/* MOBILE */}
-        <div className='flex flex-col items-center gap-3 lg:hidden px-3'>
+        <div className='flex flex-col items-center gap-6 lg:hidden px-3'>
           <div className=''>
             <Image
               src={'/imgs/steps/logos-mobile.svg'}
@@ -107,7 +107,7 @@ function StepsSection({}: Props) {
         </div>
         {/* FOOTER */}
         <div className=''>
-          <p className='text-center font-Sintony text-[6px]  lg:text-[10px] w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer '>
+          <p className='text-center font-Sintony text-[6px]  lg:text-[10px] w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  pt-5'>
             *El destinatario deberá aplicar a una Cuenta Sacbé en México. En México, las cuentas con
             tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de
             C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard
