@@ -121,7 +121,7 @@ function Footer({}: Props) {
             </div>
           </div>
           {/* TEXT */}
-          <div className='flex flex-col gap-5 text-xs'>
+          <div className='flex flex-col gap-5 text-xs break-all'>
             <p>
               POR ACEPTAR O UTILIZAR ESTA TARJETA, USTED ACEPTA ESTAR OBLIGADO POR LOS TÉRMINOS Y
               CONDICIONES CONTENIDAS EN ESTE ACUERDO DEL TITULAR DE LA TARJETA Y PROGRAMA DE

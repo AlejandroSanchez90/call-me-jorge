@@ -107,7 +107,7 @@ function StepsSection({}: Props) {
         </div>
         {/* FOOTER */}
         <div className=''>
-          <p className='text-center font-Sintony text-[6px]  lg:text-[10px] w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  pt-5'>
+          <p className='text-center font-Sintony text-[8px] leading-[8px]  lg:leading-[14px] lg:text-xs  w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  pt-5'>
             *El destinatario deberá aplicar a una Cuenta Sacbé en México. En México, las cuentas con
             tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de
             C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard

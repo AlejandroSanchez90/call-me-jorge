@@ -18,7 +18,7 @@ function DesktopMenu({}: Props) {
         ))}
 
         <li className='bg-sacbeOrangeDarker px-4 py-1 rounded-full font-bold'>
-          <Link href='#'>English</Link>
+          <Link href='/en'>English</Link>
         </li>
       </ul>
     </div>

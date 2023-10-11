@@ -21,14 +21,14 @@ function ButtonDownload({ label }: Props) {
       <ButtonRound
         onClick={() => setIsOpen(!isOpen)}
         label={label}
-        className={cn('peer relative peer w-[80%] p-4 font-bold mx-auto')}
+        className={cn('peer relative peer w-full p-4 font-bold mx-auto')}
       />
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent
           onClick={() => {
             console.log('click');
           }}
-          className='bg-sacbeBeige rounded-lg'
+          className='bg-sacbeBeige h-full w-full'
         >
           <MobileForm />
         </DialogContent>

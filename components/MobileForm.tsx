@@ -78,7 +78,7 @@ function MobileForm({}: Props) {
         <div className='flex w-[95%] mx-auto gap-3 items-center justify-center mt-6'>
           <ButtonRound label='Envíar' className='py-4 font-bold' />
         </div>
-        <p className='text-[10px] font-Sintony mt-5 text-center text-sacbeBlue'>
+        <p className='text-[8px] leading-[8px] font-Sintony mt-5 text-center text-sacbeBlue'>
           *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de
           identificación. **Para más información acerca de tasas y tarifas ver el Contrato del
           Titular de la Tarjeta Sacbé Visa™

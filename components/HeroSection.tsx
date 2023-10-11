@@ -98,7 +98,7 @@ function HeroSection({}: Props) {
               </div>
             </div>
             <div className='absolute top-[100%]'>
-              <p className='text-xs md:sm max-w-md font-Sintony mt-5 text-sacbeBlue'>
+              <p className='lg:leading-[14px] lg:text-xs md:sm max-w-md font-Sintony mt-5 text-sacbeBlue'>
                 *Aplica para personas sin SSN disponible pero que pueden proporcionar formas
                 alternas de identificación. **Para más información acerca de tasas y tarifas ver el
                 Contrato del Titular de la Tarjeta Sacbé Visa™
@@ -126,7 +126,7 @@ function HeroSection({}: Props) {
         </ul>
         <ButtonDownload label='Descargar' />
 
-        <p className='text-[10px] font-Sintony max-w-[18rem]  text-center pb-1 text-sacbeBlue'>
+        <p className='text-[8px] leading-[8px] font-Sintony max-w-[18rem]  text-center pb-1 text-sacbeBlue'>
           *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de
           identificación. **Para más información acerca de tasas y tarifas ver el Contrato del
           Titular de la Tarjeta Sacbé Visa™

@@ -19,10 +19,10 @@ function TableSection({}: Props) {
                 <span className='text-sacbeOrangeDarker'> EN MINUTOS</span>
               </h1>
               <div className='hidden lg:flex flex-col gap-2'>
-                <p className='font-Sintony font-bold text-md lg:text-xl text-sacbeBlue leading-none lg:leading-[25px]'>
+                <p className='font-Sintony font-bold text-md lg:text-xl text-sacbeBlue leading-none lg:leading-[22px]'>
                   Sin Social Security <br /> Number (SSN) ni Green Card*{' '}
                 </p>
-                <p className='font-Sintony text-md lg:text-xl text-sacbeBlue lg:leading-[25px]'>
+                <p className='font-Sintony text-md lg:text-xl text-sacbeBlue lg:leading-[22px]'>
                   Una solución financiera en Estados Unidos <br /> donde podrás recibir pagos,
                   enviar dinero,
                   <br /> cargar tiempo aire, y pagar servicios.
@@ -31,7 +31,7 @@ function TableSection({}: Props) {
 
               {/* Legals */}
               <div className='hidden lg:block'>
-                <p className='font-Sintony text-sacbeBlue leading-none text-xs mt-8'>
+                <p className='font-Sintony text-sacbeBlue leading-none lg:leading-[14px] lg:text-xs '>
                   *Aplica para personas sin SSN disponible pero que pueden proporcionar formas{' '}
                   <br />
                   alternas de identificación. **Este cuadro comparativo es meramente informativo{' '}
@@ -69,7 +69,7 @@ function TableSection({}: Props) {
             cargar tiempo aire, y pagar servicios.
           </p>
         </div>
-        <p className='font-Sintony text-[8px] text-center w-[80%]  lg:hidden text-sacbeBlue'>
+        <p className='font-Sintony text-[8px] leading-[8px] text-center w-[80%]  lg:hidden text-sacbeBlue'>
           *Este cuadro comparativo es meramente informativo y se actualiza constantemente, por lo
           que está sujeto a cambios sin previo aviso. **Aplica para personas sin SSN disponible pero
           que pueden proporcionar formas alternas de identificación.

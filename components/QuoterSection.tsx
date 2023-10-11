@@ -21,7 +21,7 @@ function QuoterSection({ exchangeRate }: Props) {
             <h1 className='text-center lg:text-left text-sacbeBlue text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] font-bold '>
               CALCULA <br /> <span className='text-sacbeOrangeDarker'>TU ENVÍO</span>
             </h1>
-            <p className='font-bold leading-[20px] lg:font-normal text-center lg:text-left font-Sintony text-lg  lg:text-xl text-sacbeBlue'>
+            <p className='font-bold leading-[22px] lg:font-normal text-center lg:text-left font-Sintony text-lg  lg:text-xl text-sacbeBlue'>
               Descubre lo fácil que es hacer <br /> envíos desde tu Cuenta Sacbé™
             </p>
           </div>
@@ -35,13 +35,13 @@ function QuoterSection({ exchangeRate }: Props) {
         </div>
       </div>
       {/* FOOTER MOBILE */}
-      <p className='lg:hidden max-w-2xl w-[80%] lg:w-full font-Sintony text-center text-[9px] lg:text-xs text-sacbeBlue lg:text-sacbeBeige'>
+      <p className='lg:hidden max-w-2xl w-[80%] lg:w-full font-Sintony text-center text-[8px] leading-[8px] text-sacbeBlue lg:text-sacbeBeige'>
         *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
         constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
         sobre tasas o tarifas ver el Contrato del Titular de Sacbé.
       </p>
-      <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[12%]  lg:-translate-x-[50%] text-white z-50'>
-        <p className='max-w-2xl w-1/2 lg:w-full font-Sintony text-center text-[9px] lg:text-xs text-sacbeBlue lg:text-sacbeBeige'>
+      <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[12%]  lg:-translate-x-[50%]  z-50'>
+        <p className='max-w-2xl w-1/2 lg:w-full font-Sintony text-center text-[9px] lg:leading-[14px] lg:text-xs  text-sacbeBlue lg:text-sacbeBeige'>
           *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
           constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
           sobre tasas o tarifas ver el Contrato del Titular de Sacbé.

@@ -15,8 +15,7 @@ function BenefitsSection({}: Props) {
             <h1 className='text-5xl leading-[45px] text-center  lg:w-fit  lg:text-8xl lg:leading-[85px] font-bold text-sacbeBeige '>
               MARCAMOS{' '}
               <span className='text-sacbeOrangeDarker'>
-                {' '}
-                <br />
+                <br className='lg:hidden' />
                 LA DIFERENCIA
               </span>
             </h1>
@@ -30,7 +29,7 @@ function BenefitsSection({}: Props) {
               {/* CARD 1 */}
               <BenefitsCard image='/imgs/benefitsCards/one.png'>
                 {/* Caption */}
-                <h3 className='font-bold text-3xl leading-none'>
+                <h3 className='font-bold text-3xl leading-[25px]'>
                   DIRECTO A <br /> TU PUERTA
                 </h3>
                 {/* Description */}
@@ -45,7 +44,7 @@ function BenefitsSection({}: Props) {
               {/* CARD 2 */}
               <BenefitsCard image='/imgs/benefitsCards/two.png'>
                 {/* Caption */}
-                <h3 className='font-bold text-3xl leading-none'>
+                <h3 className='font-bold text-3xl leading-[25px]'>
                   TRANSFIERE <br /> DESDE TU CELULAR
                 </h3>
                 {/* Description */}
@@ -59,7 +58,7 @@ function BenefitsSection({}: Props) {
 
               {/* CARD 3 */}
               <BenefitsCard image='/imgs/benefitsCards/three.png'>
-                <h3 className='font-bold text-3xl leading-none'>
+                <h3 className='font-bold text-3xl leading-[25px]'>
                   USA EL MÉTODO QUE <br /> TE CONVENGA
                 </h3>
                 {/* Description */}
@@ -73,7 +72,7 @@ function BenefitsSection({}: Props) {
 
               {/* CARD4 */}
               <BenefitsCard image='/imgs/benefitsCards/four.png'>
-                <h3 className='font-bold text-3xl leading-none'>
+                <h3 className='font-bold text-3xl leading-[25px]'>
                   HAZLO TODO EN <br /> UNA SOLA APP
                 </h3>
                 {/* Description */}
@@ -87,7 +86,7 @@ function BenefitsSection({}: Props) {
           {/* Legals */}
 
           <div className='max-w-[330px] lg:max-w-[840px]    mx-auto '>
-            <p className='font-Sintony text-center text-[10px] px-2 lg:px-0 lg:text-sm leading-none text-sacbeBeige '>
+            <p className='lg:leading-[14px] lg:text-xs  font-Sintony text-center text-[8px] leading-[8px] px-2 lg:px-0 l  text-sacbeBeige '>
               *Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con
               una licencia de Visa U.S.A Inc. Cargos adicionales de terceros pueden aplicar, para
               más información ver el Anexo de tarifas y cargos. **Válido para comercios y
