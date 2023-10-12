@@ -133,5 +133,88 @@
     "footer": {
       "text": "CONTÁCTANOS. <b> ESTAMOS PARA TI </b>"
     }
+  },
+  "Footer": {
+    "links": {
+      "terms": {
+        "title": "Términos de uso",
+        "one": {
+          "label": "Política de Privacidad",
+          "url": "/pdf/es/Privacy_Policy.pdf"
+        },
+        "two": {
+          "label": "Contrato de titular",
+          "url": "/pdf/es/Cardholder_Agreement.pdf"
+        },
+        "three": {
+          "label": "Tarifas y cargos",
+          "url": "/pdf/es/Fee_Schedule.pdf"
+        },
+        "four": {
+          "label": "Política de Cancelaciones y Reembolsos",
+          "url": "/pdf/es/Cancellation_and_Refund_Policy.pdf"
+        },
+        "five": {
+          "label": "Renuncia de Responsabilidad y Notificaciones",
+          "url": "/pdf/es/Disclaimer_Disclosure.pdf"
+        }
+      },
+      "customer": {
+        "title": "Servicio al Cliente",
+        "one": {
+          "label": "Preguntas Frecuentes",
+          "url": "/pdf/es/FAQ.pdf"
+        },
+        "two": {
+          "label": "Contacto",
+          "url": "#"
+        },
+        "hours": "9am - 9pm EST / 365 días"
+      },
+      "us": {
+        "title": "Nosotros",
+        "one": {
+          "label": "Quienes somos",
+          "url": "#"
+        },
+        "two": {
+          "label": "Facebook",
+          "url": "#"
+        },
+        "three": {
+          "label": "YouTube",
+          "url": "#"
+        }
+      }
+    },
+    "legals": {
+      "pOne": {
+        "orange": "POR ACEPTAR O UTILIZAR ESTA TARJETA, USTED ACEPTA ESTAR OBLIGADO POR LOS TÉRMINOS Y CONDICIONES CONTENIDAS EN ESTE ACUERDO DEL TITULAR DE LA TARJETA Y PROGRAMA DE TARIFAS, SI LO HUBIERA.",
+        "normal": "La Tarjeta Prepago Visa® Sacbé es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con una licencia de Visa U.S.A. Inc. “Metropolitan Commercial Bank” y “Metropolitan” son marcas registradas de Metropolitan Commercial Bank ©2014."
+      },
+      "pTwo": {
+        "orange": "PARA SERVICIO AL CLIENTE LLAMAR A Sacbé AL +1 928 237 9808. 9AM - 9PM EST / 365 días."
+      },
+      "pThree": {
+        "orange": "INFORMACION IMPORTANTE SOBRE LOS PROCEDIMIENTOS PARA ABRIR UNA CUENTA NUEVA DE TARJETA:",
+        "normal": " Para ayudar al gobierno a luchar contra el financiamiento de actividades de terrorismo y lavado de dinero, la ley federal requiere que todas las instituciones financieras y sus administradores de programas o proveedores de servicios externos obtener, verificar y registrar información que identifique a cada persona que abre una cuenta de Tarjeta. ",
+        "orangeTwo": "LO QUE ESTO SIGNIFICA PARA USTED:",
+        "normalTwo": " Cuando abra una Cuenta de Tarjeta, le pediremos que proporcione su nombre, dirección, fecha de nacimiento u otra información que nos permita identificarlo. También podemos pedirle ver su licencia de conducir u otros documentos de identificación."
+      },
+      "pFour": {
+        "orange": "DIVULGACIÓN PARA CUENTAS PREPAGADAS: ",
+        "normal": "Sus fondos se retendrán o transferirán a Metropolitan Commercial Bank, una institución asegurada por la FDIC. Mientras estén allí, sus fondos están asegurados hasta $250,000 por la FDIC en caso de que Metropolitan Commercial Bank quiebre y si se cumplen los requisitos específicos de seguro de depósito y su tarjeta está registrada. Consulte",
+        "orangeTwo": "fdic.gov/deposit/deposits/prepaid_esp.html",
+        "normalTwo": "para obtener detalles. El seguro de la FDIC no protege sus fondos en caso de que Sacbé quiebre o del riesgo de robo o fraude."
+      },
+      "pFive": {
+        "normal": "Una vez activada la tarjeta, puede depositar fondos a su cuenta de Tarjeta Prepagada Visa® Sacbé (llamado “carga de valor” o “carga”) en cualquier momento mediante el uso de una tarjeta de débito de los Estados Unidos, un depósito directo, o mediante transferencias de pagos domiciliados (ACH por las siglas en inglés de Automated Clearing House). También puede cargar su tarjeta con dinero en efectivo en las ubicaciones de recarga de Green Dot participantes."
+      },
+      "pSix": {
+        "normal": "Las compras realizadas con su Tarjeta Prepago Visa® Sacbé que no estén autorizadas por usted pueden estar protegidas por la Política de Responsabilidad Cero de Visa® (Para más detalles por favor ver",
+        "orange": "El contrato al titular de la Tarjeta Débito Prepago Visa® Sacbé",
+        "normalTwo": "). Esto significa que usted no es responsable de ninguna compra no autorizada, siempre y cuando nos notifique de inmediato. La Política de responsabilidad cero de Visa® no se aplica a las transacciones en cajeros automáticos fuera de las redes de Visa® y PLUS ni a las transacciones realizadas con un PIN (Número de identificación personal) que no son procesadas por Visa®. Sujeto a actualizaciones por parte de Visa®. Se pueden aplicar ciertas limitaciones. Consulte su Acuerdo del titular de la tarjeta prepagada Visa® Sacbé para obtener más detalles."
+      }
+    }
   }
 }

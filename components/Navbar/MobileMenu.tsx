@@ -58,7 +58,9 @@ function MobilMenu({}: Props) {
                       </Link>
                     </li>
                   ))}
-                  <LanguageSwitcher className='bg-sacbeBeige text-sacbeBlue w-2/3 px-1 py-1 rounded-full font-bold font-Sintony flex items-center justify-center' />
+                  <li>
+                    <LanguageSwitcher className='bg-sacbeBeige text-sacbeBlue px-4 py-1 rounded-full font-bold font-Sintony flex justify-center' />
+                  </li>
                 </ul>
               </div>
             </SheetDescription>

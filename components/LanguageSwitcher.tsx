@@ -23,11 +23,13 @@ function LanguageSwitcher({ className }: Props) {
     });
   }
   return (
-    <li className={cn(`bg-sacbeOrange  px-4 py-1 rounded-full font-bold`, className)}>
-      <button className='' value={t('label')} onClick={(e: any) => handleClick(e)}>
-        {t('label')}
-      </button>
-    </li>
+    <button
+      className={cn(`bg-sacbeOrange  px-4 py-1 rounded-full font-bold`, className)}
+      value={t('label')}
+      onClick={(e: any) => handleClick(e)}
+    >
+      {t('label')}
+    </button>
   );
 }
 

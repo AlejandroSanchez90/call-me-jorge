@@ -134,5 +134,88 @@
     "footer": {
       "text": "CONTACT US <b> WE ARE HERE FOR YOU </b>"
     }
+  },
+  "Footer": {
+    "links": {
+      "terms": {
+        "title": "Terms of Use",
+        "one": {
+          "label": "Privacy Policy",
+          "url": "/pdf/en/Privacy_Policy.pdf"
+        },
+        "two": {
+          "label": "Cardholder Agreement",
+          "url": "/pdf/en/Cardholder_Agreement.pdf"
+        },
+        "three": {
+          "label": "Fee Schedule",
+          "url": "/pdf/en/Fee_Schedule.pdf"
+        },
+        "four": {
+          "label": "Cancellation and Refund Policy",
+          "url": "/pdf/en/Cancellation_and_Refund_Policy.pdf"
+        },
+        "five": {
+          "label": "Disclaimer and Notices",
+          "url": "/pdf/en/Disclaimer_Disclosure.pdf"
+        }
+      },
+      "customer": {
+        "title": "Customer Service",
+        "one": {
+          "label": "FAQs",
+          "url": "/pdf/en/FAQ.pdf"
+        },
+        "two": {
+          "label": "Contact Us",
+          "url": "#"
+        },
+        "hours": "9am - 9pm EST / 365 days"
+      },
+      "us": {
+        "title": "About Us",
+        "one": {
+          "label": "Who We Are",
+          "url": "#"
+        },
+        "two": {
+          "label": "Facebook",
+          "url": "#"
+        },
+        "three": {
+          "label": "YouTube",
+          "url": "#"
+        }
+      }
+    },
+    "legals": {
+      "pOne": {
+        "orange": "BY USING THIS CARD, YOU AGREE WITH AND ACCEPT THE TERMS AND CONDITIONS OF THE CARDHOLDER AGREEMENT AND FEE SCHEDULE, IF ANY.",
+        "normal": "The Sacbé PrepaidVisa® Card is issued by Metropolitan Commercial Bank (Member FDIC) pursuant to a license from Visa® U.S.A. Inc. “Metropolitan Commercial Bank” and “Metropolitan” are registered trademarks of Metropolitan Commercial Bank ©2014."
+      },
+      "pTwo": {
+        "orange": "FOR CUSTOMER SERVICE CALL Sacbé AT +1 928 237 9808. 9AM - 9PM EST / 365 days."
+      },
+      "pThree": {
+        "orange": "IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW CARD ACCOUNT:",
+        "normal": " To help the government fight the funding of terrorism and money laundering activities, federal law requires all financial institutions and their third-party program managers or service providers to obtain, verify, and record information that identifies each person who opens a Card Account. ",
+        "orangeTwo": "WHAT THIS MEANS FOR YOU: ",
+        "normalTwo": " When you open a Card account, we will ask for your name , address, date of birth, and other information that will allow us to identify you. We may also ask to see your driver's license or other identifying documents."
+      },
+      "pFour": {
+        "orange": "DISCLOSURE FOR PREPAID ACCOUNTS: ",
+        "normal": "Your funds will be held at or transferred to Metropolitan Commercial Bank, an FDIC-insured institution. While there, your funds are insured up to $250,000 by the FDIC in the event Metropolitan Commercial Bank fails if specific deposit insurance requirements are met and your card is registered. See",
+        "orangeTwo": "fdic.gov/deposit/deposits/prepaid_esp.html",
+        "normalTwo": "for details. FDIC insurance does not protect your funds in the event of Sacbé’s failure or from the risk of theft or fraud."
+      },
+      "pFive": {
+        "normal": "Once activated, you may add funds to your Sacbé Prepaid Visa® Card account (called “value loading” or “loading”) at any time by using a U.S. debit card, direct deposit or through Automated Clearing House (“ACH”) transfers. You may also load your card with cash at participating Green Dot reload locations. Cross-border payments are made using Metropolitan Commercial Bank (“MCB”)."
+      },
+      "pSix": {
+        "normal": "Purchases made with your Sacbé Prepaid Visa® Card that are not authorized by you may be protected by Visa® Zero Liability Policy (For details please refer to the",
+        "orange": "Sacbé prepaid VISA cardholder agreement",
+        "normalTwo": "). This means you are not responsible for any unauthorized purchases as long as you notify us promptly. Visa® Zero Liability Policy does not apply to ATM transactions outside the Visa® and PLUS networks or transactions made with a PIN (Personal Identification Number) that are not processed by Visa®. Subject to updates by Visa®. Certain limitations may apply. Please see your Sacbé Prepaid Visa® Cardholder Agreement for details."
+      }
+    }
   }
 }

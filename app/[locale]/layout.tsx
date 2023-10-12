@@ -31,6 +31,9 @@ export default async function RootLayout({ children, params: { locale } }: RootL
   }
   return (
     <html lang='en' className='scroll-smooth'>
+      <head>
+        <link rel='icon' href='/favicon.ico' sizes='any' />
+      </head>
       <body className='font-Tungsten scroll-smooth'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Toaster
