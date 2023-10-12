@@ -50,6 +50,7 @@ function StepsSection({}: Props) {
               width={200}
               height={200}
               alt='stores'
+              priority
               className='object-cover w-full'
             />
             <div className='absolute rounded-full overflow-hidden h-[90px] w-[90px] border-sacbeOrangeDarker border-[3px] top-[-15%] left-[-15%]'>
@@ -100,6 +101,7 @@ function StepsSection({}: Props) {
               src={'/imgs/steps/atm_logos.png'}
               width={200}
               height={200}
+              priority
               alt='stores'
               className='object-cover w-full '
             />
