@@ -2,6 +2,7 @@
 import useRoutes from '@/hooks/useRoutes';
 import Link from 'next/link';
 import React from 'react';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 type Props = {};
 
@@ -17,9 +18,7 @@ function DesktopMenu({}: Props) {
           </li>
         ))}
 
-        <li className='bg-sacbeOrangeDarker px-4 py-1 rounded-full font-bold'>
-          <Link href='/en'>English</Link>
-        </li>
+        <LanguageSwitcher />
       </ul>
     </div>
   );

@@ -1,11 +1,15 @@
+'use client';
 import React from 'react';
 import SectionLayout from './SectionLayout';
 import BenefitsCard from './BenefitsCard';
 import SectionFooter from './SectionFooter';
+import { useTranslations } from 'next-intl';
 
 type Props = {};
 
 function BenefitsSection({}: Props) {
+  const t = useTranslations('Benefits');
+
   return (
     <SectionLayout>
       <div className='h-full w-full  bg-sacbeBlue flex items-center justify-center pb-5 lg:pb-0'>
@@ -13,14 +17,13 @@ function BenefitsSection({}: Props) {
           {/* HEADER */}
           <div className='flex items-center flex-col'>
             <h1 className='text-5xl leading-[45px] text-center  lg:w-fit  lg:text-8xl lg:leading-[85px] font-bold text-sacbeBeige '>
-              MARCAMOS{' '}
+              {t('title.white')}
               <span className='text-sacbeOrangeDarker'>
-                <br className='lg:hidden' />
-                LA DIFERENCIA
+                <br className='lg:hidden' /> {t('title.orange')}
               </span>
             </h1>
             <h2 className='uppercase hidden lg:block text-6xl text-sacbeBeige leading-none'>
-              Conoce todos los servicios que nos hacen únicos
+              {t('title.caption')}
             </h2>
           </div>
           {/* CARDS */}
@@ -29,55 +32,70 @@ function BenefitsSection({}: Props) {
               {/* CARD 1 */}
               <BenefitsCard image='/imgs/benefitsCards/one.png'>
                 {/* Caption */}
-                <h3 className='font-bold text-3xl leading-[25px]'>
-                  DIRECTO A <br /> TU PUERTA
+                <h3 className='font-bold text-3xl leading-[25px] uppercase'>
+                  {t.rich('cards.primera.title', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Obtén tu Tarjeta Digital o <br /> solicita una{' '}
-                  <b>
-                    Tarjeta de <br /> Débito Prepagada a <br /> domicilio sin costo*
-                  </b>
+                  {t.rich('cards.primera.text', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </p>
               </BenefitsCard>
 
               {/* CARD 2 */}
               <BenefitsCard image='/imgs/benefitsCards/two.png'>
                 {/* Caption */}
-                <h3 className='font-bold text-3xl leading-[25px]'>
-                  TRANSFIERE <br /> DESDE TU CELULAR
+                <h3 className='font-bold text-3xl leading-[25px] uppercase'>
+                  {t.rich('cards.segunda.title', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  <b>
-                    Envía dinero a tus contactos <br /> en México y USA{' '}
-                  </b>
-                  desde tu <br /> Cuenta Sacbé
+                  {t.rich('cards.segunda.text', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </p>
               </BenefitsCard>
 
               {/* CARD 3 */}
               <BenefitsCard image='/imgs/benefitsCards/three.png'>
-                <h3 className='font-bold text-3xl leading-[25px]'>
-                  USA EL MÉTODO QUE <br /> TE CONVENGA
+                <h3 className='font-bold text-3xl leading-[25px] uppercase'>
+                  {t.rich('cards.tercera.title', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Retira en cajeros, o{' '}
-                  <b>
-                    paga <br /> con tu tarjeta en tiendas <br /> físicas o en línea**
-                  </b>
+                  {t.rich('cards.tercera.text', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </p>
               </BenefitsCard>
 
               {/* CARD4 */}
               <BenefitsCard image='/imgs/benefitsCards/four.png'>
-                <h3 className='font-bold text-3xl leading-[25px]'>
-                  HAZLO TODO EN <br /> UNA SOLA APP
+                <h3 className='font-bold text-3xl leading-[25px] uppercase'>
+                  {t.rich('cards.cuarta.title', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </h3>
                 {/* Description */}
                 <p className='text-sm leading-none font-Sintony'>
-                  Paga tus servicios o <br /> <b>recarga tiempo aire</b>
+                  {t.rich('cards.cuarta.text', {
+                    b: (chunks) => <b>{chunks}</b>,
+                    br: () => <br />,
+                  })}
                 </p>
               </BenefitsCard>
             </div>
@@ -87,16 +105,13 @@ function BenefitsSection({}: Props) {
 
           <div className='max-w-[330px] lg:max-w-[840px]    mx-auto '>
             <p className='lg:leading-[14px] lg:text-xs  font-Sintony text-center text-[8px] leading-[8px] px-2 lg:px-0 l  text-sacbeBeige '>
-              *Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con
-              una licencia de Visa U.S.A Inc. Cargos adicionales de terceros pueden aplicar, para
-              más información ver el Anexo de tarifas y cargos. **Válido para comercios y
-              plataformas que aceptan pagos con tarjeta VISA™.
+              {t('disclaimer.text')}
             </p>
           </div>
         </div>
       </div>
       <SectionFooter variant='beige' textColor='orange'>
-        UNA NUEVA FORMA <b className='text-sacbeBlue'>DE ENVIAR DINERO A MÉXICO</b>
+        {t('footer.orange')} <b className='text-sacbeBlue'>{t('footer.blue')}</b>
       </SectionFooter>
     </SectionLayout>
   );

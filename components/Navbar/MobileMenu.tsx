@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { X } from 'lucide-react';
 import useRoutes from '@/hooks/useRoutes';
 import Link from 'next/link';
+import LanguageSwitcher from '../LanguageSwitcher';
 type Props = {};
 
 function MobilMenu({}: Props) {
@@ -57,9 +58,7 @@ function MobilMenu({}: Props) {
                       </Link>
                     </li>
                   ))}
-                  <li className='bg-sacbeBeige text-sacbeBlue w-2/3 px-1 py-1 rounded-full font-bold font-Sintony'>
-                    <Link href='#'>English</Link>
-                  </li>
+                  <LanguageSwitcher className='bg-sacbeBeige text-sacbeBlue w-2/3 px-1 py-1 rounded-full font-bold font-Sintony flex items-center justify-center' />
                 </ul>
               </div>
             </SheetDescription>

@@ -1,22 +1,24 @@
 import { useMemo } from 'react';
+import useCurrentLocale from './useCurrentLocale';
 
 const useRoutes = () => {
+  const locale = useCurrentLocale();
   const routes = useMemo(
     () => [
       {
-        label: 'Ver videos',
+        label: locale === 'es' ? 'Watch videos' : 'Ver videos',
         path: '#',
       },
       {
-        label: 'Beneficios',
+        label: locale === 'es' ? 'Benefits' : 'Beneficios',
         path: '#benefits-section',
       },
       {
-        label: 'Socios',
+        label: locale === 'es' ? 'Partners' : 'Socios',
         path: '#steps-section',
       },
       {
-        label: 'Sobre Nosotros',
+        label: locale === 'es' ? 'About us' : 'Sobre Nosotros',
         path: '#quoter-section',
       },
       {
@@ -24,7 +26,7 @@ const useRoutes = () => {
         path: '#table-section',
       },
     ],
-    [],
+    [locale],
   );
 
   return routes;

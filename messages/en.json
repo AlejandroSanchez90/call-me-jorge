@@ -1,0 +1,138 @@
+{
+  "LanguageSwitcher": { "label": "Español" },
+  "Hero": {
+    "title": {
+      "green": "IF JORGE RECOMMENDED YOU,",
+      "orange": "YOU'RE ONE OF US."
+    },
+    "list": {
+      "primera": "OPEN A SACBÉ ACCOUNT IN THE USA WITHOUT SSN*",
+      "segunda": "RECEIVE A VISA™ PREPAID DEBIT CARD",
+      "tercera": "SEND MONEY AT THE BEST PRICE ON THE MARKET**"
+    },
+    "form": {
+      "name": "NAME",
+      "phone": "PHONE",
+      "email": "EMAIL",
+      "postalCode": "POSTAL CODE",
+      "submit": "Send",
+      "note": "LEAVE US YOUR INFORMATION TO RECEIVE A DOWNLOAD LINK"
+    },
+    "disclaimer": {
+      "text": "*This applies only to people who don’t have a SSN available but can provide alternative forms of Identification. **This card is issued by Metropolitan Commercial Bank (Member FDIC) pursuant to a license from Visa U.S.A. Inc."
+    },
+    "download": {
+      "label": "Download"
+    },
+    "footer": {
+      "primero": "A JOINT EFFORT WITH",
+      "segundo": "CUTTING-EDGE TECHNOLOGY"
+    }
+  },
+
+  "Benefits": {
+    "title": {
+      "white": "WE MAKE",
+      "orange": "A DIFFERENCE",
+      "caption": "ENJOY ALL YOUR SACBÉ ACCOUNT™ BENEFITS, INCLUDING"
+    },
+    "cards": {
+      "primera": {
+        "title": "delivered to <br></br> your doorstep",
+        "text": "Get a Digital Card or <br></br> <b>Request a Physical Prepaid <br></br> Debit Card at no cost*</b>"
+      },
+      "segunda": {
+        "title": "MAKE TRANSFERS <br></br> from your PHONE",
+        "text": "<b>Send money to contacts <br></br> in Mexico</b> and the US from <br></br> your Sacbé Account"
+      },
+      "tercera": {
+        "title": "choose whatever <br></br> works for you",
+        "text": "Withdraw cash from ATMs, <br></br> <b>pay with your physical card <br></br> at stores or online**</b>"
+      },
+      "cuarta": {
+        "title": "do more from <br></br> a single app",
+        "text": "Pay your utilities or <br></br> <b>Make mobile top ups.</b>"
+      }
+    },
+    "disclaimer": {
+      "text": "*This card is issued by Metropolitan Commercial Bank (Member FDIC) pursuant to a license from Visa U.S.A. Inc. Additional third party charges may apply, for more information please refer to the Sacbé Prepaid Visa™ Card Cardholder agreement.  **Valid for businesses and platforms that accept VISA™ card payments."
+    },
+    "footer": {
+      "orange": "A NEW WAY",
+      "blue": "TO SEND MONEY TO MEXICO"
+    }
+  },
+  "Steps": {
+    "title": {
+      "orange": "SEND MONEY",
+      "blue": "TO <br></br> MEXICO* IN MINUTES"
+    },
+    "cards": {
+      "primera": {
+        "title": "Fund your <br></br> account in the US",
+        "text": "Add balance <b> from bank <br></br> accounts, debit/credit cards, or <br></br> with cash at stores near you** </b>"
+      },
+      "segunda": {
+        "title": "Send money <br></br> paying just",
+        "text": "Direct International Transfer Fee <br></br> with a competitive exchange rate***"
+      },
+      "tercera": {
+        "title": "PAID WHERE <br></br> THEY NEED IT ",
+        "text": "In cash directly at <br></br> a participating location or <br></br> via ATM withdrawal at <b> over <br></br> 44,000 ATMs**** </b>"
+      }
+    },
+    "mobile": {
+      "text": "Send money paying just $1.50 USD Direct International Transfer Fee with a competitive exchange rate***",
+      "image": "/imgs/steps/mobile-en.svg"
+    },
+    "disclaimer": {
+      "text": "*Recipient will need to apply for a Sacbé account in Mexico. In Mexico, SACBÉ card accounts are separately sponsored by Sacbé Payments de México, S.A.P.I de C.V. pursuant to a license by Mastercard International. **Service provided by Green dot Network, additional charges may apply. Third party logos are not property of the Metropolitan Commercial Bank or Sacbé Payments de México S.A.P.I de C.V. ***Transfer money internationally with $1.50 direct international transfer fee charged per each remittance transfer. The foreign exchange rate applicable to your transaction is displayed at the time of the transaction. For more information around fees or rates see the Sacbe Prepaid Visa™ Card cardholder agreement. ****In Mexico, ACBÉ card accounts are separately sponsored by Sacbé Payments de México, S.A.P.I de C.V. pursuant to a license by Mastercard International. "
+    },
+    "footer": {
+      "text": "Send 24/7 from your phone to where its needed"
+    }
+  },
+  "Quoter": {
+    "title": {
+      "blue": "ESTIMATE YOUR ",
+      "orange": "MONEY TRANSFER",
+      "caption": "Find out what it's like to send <br></br> money using your Sacbé Account™"
+    },
+    "app": {
+      "label_one": "IF THEY NEED",
+      "label_two": "YOU ARE SENDING",
+      "dollar_today": "Dollar today:",
+      "button": "Send now"
+    },
+    "disclaimer": {
+      "text": "*The exchange rate shown is merely informative and is constantly updated, so it is subject to change without prior notice. For more information around fees or rates see the Sacbe Prepaid Visa™ Card cardholder agreement. "
+    },
+    "footer": {
+      "text": "SIGN UP <b> IN MINUTES </b>"
+    }
+  },
+  "Table": {
+    "title": {
+      "blue": "sign up with <br></br>",
+      "orange": "your phone <br></br> and a photo ID",
+      "caption": "No Social Security Number <br></br> (SSN) or Green card* required",
+      "text": "A financial solution in the United States <br></br> where you can get payments, send money, <br></br> make mobile top ups, and pay for utilities."
+    },
+    "titleMobile": {
+      "blue": "SIGN UP",
+      "orange": "I MINUTES",
+      "text": "A financial solution in the United States where you can get payments, send money, make mobile top ups, and pay for utilities."
+    },
+    "table": {
+      "image": "/imgs/table/table-en.svg",
+      "text": "A Photo ID is required as verification of identity plus <br></br> a valid proof of address under your name or someone else's."
+    },
+    "disclaimer": {
+      "text": "*This applies only to people who don’t have a SSN available but can provide alternate forms <br></br> of Identification. **Sacbé is not a bank, it is a financial services provider. ***This comparison <br></br> chart is merely informative  and is constantly updated, so it is subject to change without prior notice.",
+      "mobile": "*This comparison chart is merely informative and is constantly updated, so it is  subject to change without prior notice. **This applies only to people who don’t have a SSN available but can provide alternate forms of Identification. "
+    },
+    "footer": {
+      "text": "CONTACT US <b> WE ARE HERE FOR YOU </b>"
+    }
+  }
+}

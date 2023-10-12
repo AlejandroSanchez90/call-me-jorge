@@ -3,6 +3,7 @@ import { SubmitHandler, set, useForm } from 'react-hook-form';
 import InputSacbe from './Input/InputSacbe';
 import ButtonRound from './ButtonRound';
 import toast from 'react-hot-toast';
+import { useTranslations } from 'next-intl';
 
 type Props = {
   exchangeRate: string;
@@ -14,6 +15,8 @@ export type QuoterInputs = {
 
 type Currency = 'usInput' | 'mxInput' | '';
 function Quoter({ exchangeRate }: Props) {
+  const t = useTranslations('Quoter');
+
   const [usCurrent, setUsCurrent] = useState('');
   const [mxCurrent, setMxCurrent] = useState('');
   const enabledInput = useRef<Currency>('');
@@ -62,8 +65,6 @@ function Quoter({ exchangeRate }: Props) {
 
   const handleFocus = (e: any) => {
     enabledInput.current = e.target.id;
-    console.log('enabledInput', enabledInput.current);
-
     e.target.select();
   };
   return (
@@ -72,7 +73,7 @@ function Quoter({ exchangeRate }: Props) {
         {/* INPUT */}
         <div className='h-full'>
           <label htmlFor='mxInput' className='font-Sintony font-bold text-sacbeBlue'>
-            SI NECESITA
+            {t('app.label_one')}
           </label>
           <div className='flex h-10 lg:h-full  group '>
             <InputSacbe
@@ -98,7 +99,7 @@ function Quoter({ exchangeRate }: Props) {
         {/* INPUT */}
         <div className=''>
           <label htmlFor='usInput' className='font-Sintony font-bold text-sacbeBlue'>
-            TÚ ENVÍAS
+            {t('app.label_two')}
           </label>
           <div className='flex h-10 lg:h-full  group '>
             <InputSacbe
@@ -124,11 +125,11 @@ function Quoter({ exchangeRate }: Props) {
         {/* COTIZADOR PRECIO */}
         <div className=''>
           <p className='font-Sintony text-center text-sm'>
-            Dólar hoy: 1 USD = ${exchangeRate} MXN*
+            {t('app.dollar_today')}: 1 USD = ${exchangeRate} MXN*
           </p>
         </div>
 
-        <ButtonRound label='Enviar ahora' className='p-3' onClick={() => reset()} />
+        <ButtonRound label={t('app.button')} className='p-3' onClick={() => reset()} />
       </form>
     </div>
   );

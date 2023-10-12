@@ -1,31 +1,49 @@
+'use client';
 import React from 'react';
 import SectionLayout from './SectionLayout';
 import Image from 'next/image';
 import SectionFooter from './SectionFooter';
+import { useTranslations } from 'next-intl';
 
 type Props = {};
 
 function StepsSection({}: Props) {
+  const t = useTranslations('Steps');
+
   return (
     <SectionLayout>
       <div className='flex flex-col h-full justify-center w-full gap-2 lg:gap-4 pb-5 lg:pb-0'>
         {/* Header */}
         <div className='flex items-center flex-col'>
           <h1 className='text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] text-center font-bold text-sacbeOrangeDarker  uppercase'>
-            envía dinero <br />
-            <span className='text-sacbeBlue'> a México* en minutos</span>
+            {t.rich('title.orange', {
+              b: (chunks) => <b>{chunks}</b>,
+              br: () => <br />,
+            })}
+            <span className='text-sacbeBlue'>
+              {' '}
+              {t.rich('title.blue', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
+            </span>
           </h1>
         </div>
         {/* Squares */}
         <div className='hidden lg:grid grid-cols-3 max-w-[1440px] mx-auto gap-5'>
-          {/* SQUARE */}
-          <div className='relative border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-center text-center p-2 pt-12 gap-4'>
+          {/* SQUARE 1 */}
+          <div className='relative border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-start text-center p-2 pt-12 gap-4'>
             <h1 className='uppercase text-sacbeOrangeDarker text-6xl font-bold leading-[55px]'>
-              Carga tu <br /> cuenta en usa
+              {t.rich('cards.primera.title', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </h1>
             <p className='font-Sintony text-lg text-sacbeBlue max-w-[300px] leading-none'>
-              Carga dinero desde{' '}
-              <b> cuentas bancarias, tarjetas o en efectivo en tiendas cercanas**</b>
+              {t.rich('cards.primera.text', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </p>
             <Image
               src={'/imgs/steps/stores.png'}
@@ -44,32 +62,38 @@ function StepsSection({}: Props) {
               />
             </div>
           </div>
-          {/* SQUARE */}
-          <div className=' border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-center text-center p-2 pt-12 gap-4'>
+          {/* SQUARE  2*/}
+          <div className=' border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-start text-center p-2 pt-12 gap-4'>
             <h1 className='uppercase text-sacbeOrangeDarker text-6xl font-bold leading-[55px]'>
-              ENVÍA DINERO <br /> PAGANDO SÓLO
+              {t.rich('cards.segunda.title', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </h1>
             <p className=' font-bold text-[180px] text-sacbeBlue max-w-[300px] leading-none'>
               $1.50
             </p>
-            <p className='font-Sintony text-lg leading-none text-sacbeBlue font-bold -mt-6'>
-              Cargo de Transferencia <br /> internacional directa con un <br /> atractivo tipo de
-              cambio***
+            <p className='font-Sintony text-lg leading-none text-sacbeBlue font-bold -mt-3'>
+              {t.rich('cards.segunda.text', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </p>
           </div>
-          {/* SQUARE */}
-          <div className='relative border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-center text-center p-2 pt-12 gap-4'>
+          {/* SQUARE 3 */}
+          <div className='relative border-[3px] border-sacbeOrangeDarker rounded-lg flex flex-col items-center justify-start text-center p-2 pt-12 gap-4'>
             <h1 className='uppercase text-sacbeOrangeDarker text-6xl font-bold leading-[55px]'>
-              RETIRAN DONDE <br /> LO NECESITEN
+              {t.rich('cards.tercera.title', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </h1>
-            <div className='font-Sintony text-lg text-sacbeBlue max-w-[300px] leading-none flex-1 flex items-start justify-center'>
+            <div className='font-Sintony text-lg text-sacbeBlue max-w-[300px] leading-none flex-1 flex items-center justify-center pb-3'>
               <p>
-                Directamente en establecimientos o en uno <br /> de los{' '}
-                <span>
-                  <b>
-                    +44,000 cajeros <br /> (ATM) en el país****
-                  </b>
-                </span>
+                {t.rich('cards.tercera.text', {
+                  b: (chunks) => <b>{chunks}</b>,
+                  br: () => <br />,
+                })}
               </p>
             </div>
             <Image
@@ -93,34 +117,21 @@ function StepsSection({}: Props) {
         {/* MOBILE */}
         <div className='flex flex-col items-center gap-6 lg:hidden px-3'>
           <div className=''>
-            <Image
-              src={'/imgs/steps/logos-mobile.svg'}
-              width={500}
-              height={500}
-              alt='sacbe partners'
-            />
+            <Image src={t('mobile.image')} width={500} height={500} alt='sacbe partners' />
           </div>
           <p className='font-Sintony text-sacbeBlue font-bold text-center w-[80%] leading-none'>
-            Envía dinero desde Estados Unidos por sólo $1.50*** a cualquier parte de México, o
-            fondea tu Cuenta Sacbé con tus tarjetas de crédito, débito y hasta con efectivo.
+            {t('mobile.text')}
           </p>
         </div>
         {/* FOOTER */}
         <div className=''>
           <p className='text-center font-Sintony text-[8px] leading-[8px]  lg:leading-[14px] lg:text-xs  w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  pt-5'>
-            *El destinatario deberá aplicar a una Cuenta Sacbé en México. En México, las cuentas con
-            tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de
-            C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard
-            International. **Servicio proporcionado por la Red Greendot, Los logos de terceros no
-            son propiedad de Metropolitan Commercial Bank o de Sacbe Payments. ***Aplica cargo de
-            Transferencia internacional directa $1.50. El tipo de cambio aplicado se muestra al
-            momento de la transacción. Para mas información sobre tasas o tarifas ver el contrato
-            del titular de Sacbé.
+            {t('disclaimer.text')}
           </p>
         </div>
       </div>
       <SectionFooter variant='blue' textColor='beige'>
-        <b>ENVÍOS 24/7 DESDE TU TELÉFONO</b>
+        <b className='uppercase'>{t('footer.text')}</b>
       </SectionFooter>
     </SectionLayout>
   );
