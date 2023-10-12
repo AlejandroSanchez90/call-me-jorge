@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import SectionFooter from './SectionFooter';
 import toast from 'react-hot-toast';
 import ButtonDownload from './ButtonDownload';
+import { useTranslations } from 'next-intl';
 type Props = {};
 export type HeroInputs = {
   name: string;
@@ -19,12 +20,12 @@ function HeroSection({}: Props) {
     watch,
     formState: { errors },
   } = useForm<HeroInputs>();
+
   const onSubmit: SubmitHandler<HeroInputs> = (data) => {
-    // alert(
-    //   `FORM ES VALIDO! Name: ${data.name}, Phone: ${data.phone}, Email: ${data.email}, Postal: ${data.postalCode}`,
-    // );
     toast.success('Formulario enviado con éxito');
   };
+  const t = useTranslations('Hero');
+
   return (
     <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-5 '>
       {/* Texto  DESKTOP*/}
@@ -32,13 +33,13 @@ function HeroSection({}: Props) {
         <div className='relative max-w-[45rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
           <h1 className='text-sacbeBlue  text-[70px] lg:text-8xl lg:leading-[85px] font-bold  '>
-            SI TE RECOMENDÓ JORGE <span className='text-sacbeOrange'>ERES DE LOS NUESTROS</span>
+            {t('title.green')} <span className='text-sacbeOrange'>{t('title.orange')}</span>
           </h1>
           {/* List */}
           <ul className='list-disc text-sacbeBlue text-2xl  2xl:text-4xl flex flex-col ml-7 '>
-            <li className='leading-[29px]'>ABRE UNA CUENTA SACBÉ EN USA SIN SSN*</li>
-            <li className='leading-[29px]'>RECIBE UNA TARJETA DE DÉBITO PREPAGADA VISA™</li>
-            <li className='leading-[29px]'>ENVIA DINERO AL MEJOR PRECIO DEL MERCADO**</li>
+            <li className='leading-[29px]'>{t('list.primera')}</li>
+            <li className='leading-[29px]'>{t('list.segunda')}</li>
+            <li className='leading-[29px]'>{t('list.tercera')}</li>
           </ul>
           {/* Form */}
           <form
@@ -48,14 +49,14 @@ function HeroSection({}: Props) {
           >
             <div className='w-full flex gap-3'>
               <InputCross
-                placeholder='NAME'
+                placeholder={t('form.name')}
                 id='name'
                 register={register}
                 registerOptions={{ required: true }}
                 errors={errors}
               />
               <InputCross
-                placeholder='TELÉFONO'
+                placeholder={t('form.phone')}
                 id='phone'
                 register={register}
                 type='number'
@@ -69,7 +70,7 @@ function HeroSection({}: Props) {
             </div>
             <div className='w-full flex gap-3'>
               <InputCross
-                placeholder='EMAIL'
+                placeholder={t('form.email')}
                 id='email'
                 register={register}
                 type='text'
@@ -81,7 +82,7 @@ function HeroSection({}: Props) {
                 errors={errors}
               />
               <InputCross
-                placeholder='CODIGO POSTAL'
+                placeholder={t('form.postalCode')}
                 id='postalCode'
                 register={register}
                 type='number'
@@ -90,18 +91,14 @@ function HeroSection({}: Props) {
               />
             </div>
             <div className='flex w-full gap-3 items-center justify-center'>
-              <ButtonRound label='Envíar' className='py-4 font-bold' />
+              <ButtonRound label={t('form.submit')} className='py-4 font-bold' />
               <div className='w-full text-2xl xl:text-3xl font-Tungsten text-sacbeOrangeDarker '>
-                <p className='max-w-[250px] leading-[23px] '>
-                  DÉJANOS TUS DATOS PARA RECIBIR UN LINK DE DESCARGA
-                </p>
+                <p className='max-w-[250px] leading-[23px] '>{t('form.note')}</p>
               </div>
             </div>
             <div className='absolute top-[100%]'>
               <p className='lg:leading-[14px] lg:text-xs md:sm max-w-md font-Sintony mt-5 text-sacbeBlue'>
-                *Aplica para personas sin SSN disponible pero que pueden proporcionar formas
-                alternas de identificación. **Para más información acerca de tasas y tarifas ver el
-                Contrato del Titular de la Tarjeta Sacbé Visa™
+                {t('disclaimer.text')}
               </p>
             </div>
           </form>
@@ -113,28 +110,22 @@ function HeroSection({}: Props) {
       {/* Mobile */}
       <div className='lg:hidden flex  gap-3  px-3 pt-3 w-full  flex-col items-center justify-center'>
         <h1 className=' mx-auto text-5xl leading-[45px] font-bold text-sacbeOrange text-center '>
-          <span className='text-sacbeBlue'>SI TE RECOMENDÓ JORGE</span> ERES DE LOS NUESTROS
+          <span className='text-sacbeBlue'>{t('title.green')}</span> {t('title.orange')}
         </h1>
         <ul className=' text-sacbeBlue text-2xl   flex flex-col gap-0  text-center'>
-          <li className='leading-[29px]'>&#xB7; ABRE UNA CUENTA SACBÉ EN USA SIN SSN* &#xB7;</li>
-          <li className='leading-[29px]'>
-            &#xB7; RECIBE UNA TARJETA DE DÉBITO PREPAGADA VISA™ &#xB7;
-          </li>
-          <li className='leading-[29px]'>
-            &#xB7; ENVIA DINERO AL MEJOR PRECIO DEL MERCADO** &#xB7;
-          </li>
+          <li className='leading-[29px]'>&#xB7; {t('list.primera')} &#xB7;</li>
+          <li className='leading-[29px]'>&#xB7; {t('list.segunda')} &#xB7;</li>
+          <li className='leading-[29px]'>&#xB7; {t('list.tercera')} &#xB7;</li>
         </ul>
-        <ButtonDownload label='Descargar' />
+        <ButtonDownload label={t('download.label')} />
 
         <p className='text-[8px] leading-[8px] font-Sintony max-w-[18rem]  text-center pb-1 text-sacbeBlue'>
-          *Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de
-          identificación. **Para más información acerca de tasas y tarifas ver el Contrato del
-          Titular de la Tarjeta Sacbé Visa™
+          {t('disclaimer.text')}
         </p>
       </div>
       {/* FOOTER */}
       <SectionFooter variant='blue' textColor='beige'>
-        UN ESFUERZO CONJUNTO CON <b className='text-sacbeOrangeDarker '>TECNOLOGÍA DE VANGUARDIA</b>
+        {t('footer.primero')} <b className='text-sacbeOrangeDarker '>{t('footer.segundo')}</b>
       </SectionFooter>
     </div>
   );

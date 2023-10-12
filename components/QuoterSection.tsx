@@ -5,12 +5,15 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import ButtonRound from './ButtonRound';
 import Quoter from './Quoter';
 import SectionFooter from './SectionFooter';
+import { useTranslations } from 'next-intl';
 
 type Props = {
   exchangeRate: string;
 };
 
 function QuoterSection({ exchangeRate }: Props) {
+  const t = useTranslations('Quoter');
+
   return (
     <div className=' h-full   lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center relative pb-5  gap-5 lg:gap-0'>
       {/* Texto */}
@@ -19,10 +22,14 @@ function QuoterSection({ exchangeRate }: Props) {
           {/* Title */}
           <div className='flex flex-col gap-3 lg:gap-0'>
             <h1 className='text-center lg:text-left text-sacbeBlue text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] font-bold '>
-              CALCULA <br /> <span className='text-sacbeOrangeDarker'>TU ENVÍO</span>
+              {t('title.blue')} <br />{' '}
+              <span className='text-sacbeOrangeDarker'> {t('title.orange')} </span>
             </h1>
             <p className='font-bold leading-[22px] lg:font-normal text-center lg:text-left font-Sintony text-lg  lg:text-xl text-sacbeBlue'>
-              Descubre lo fácil que es hacer <br /> envíos desde tu Cuenta Sacbé™
+              {t.rich('title.caption', {
+                b: (chunks) => <b>{chunks}</b>,
+                br: () => <br />,
+              })}
             </p>
           </div>
         </div>
@@ -36,20 +43,19 @@ function QuoterSection({ exchangeRate }: Props) {
       </div>
       {/* FOOTER MOBILE */}
       <p className='lg:hidden max-w-2xl w-[80%] lg:w-full font-Sintony text-center text-[8px] leading-[8px] text-sacbeBlue lg:text-sacbeBeige'>
-        *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
-        constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
-        sobre tasas o tarifas ver el Contrato del Titular de Sacbé.
+        {t('disclaimer.text')}
       </p>
       <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[12%]  lg:-translate-x-[50%]  z-50'>
         <p className='max-w-2xl w-1/2 lg:w-full font-Sintony text-center text-[9px] lg:leading-[14px] lg:text-xs  text-sacbeBlue lg:text-sacbeBeige'>
-          *El tipo de cambio mostrado en de carácter meramente informativo y se actualiza
-          constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información
-          sobre tasas o tarifas ver el Contrato del Titular de Sacbé.
+          {t('disclaimer.text')}
         </p>
       </div>
       {/* FOOTER */}
       <SectionFooter variant='orange' textColor='beige'>
-        REGÍSTRATE <b>EN MINUTOS</b>
+        {t.rich('footer.text', {
+          b: (chunks) => <b>{chunks}</b>,
+          br: () => <br />,
+        })}
       </SectionFooter>
     </div>
   );

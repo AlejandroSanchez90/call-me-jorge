@@ -1,0 +1,137 @@
+{
+  "LanguageSwitcher": { "label": "English" },
+  "Hero": {
+    "title": {
+      "green": "SI TE RECOMENDÓ JORGE",
+      "orange": "ERES DE LOS NUESTROS"
+    },
+    "list": {
+      "primera": "ABRE UNA CUENTA SACBÉ EN USA SIN SSN*",
+      "segunda": "RECIBE UNA TARJETA DE DÉBITO PREPAGADA VISA™",
+      "tercera": "ENVIA DINERO AL MEJOR PRECIO DEL MERCADO**"
+    },
+    "form": {
+      "name": "NOMBRE",
+      "phone": "TELÉFONO",
+      "email": "CORREO ELECTRÓNICO",
+      "postalCode": "CÓDIGO POSTAL",
+      "submit": "Envíar",
+      "note": "DÉJANOS TUS DATOS PARA RECIBIR UN LINK DE DESCARGA"
+    },
+    "disclaimer": {
+      "text": "*Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de identificación. **Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con una licencia de Visa U.S.A Inc."
+    },
+    "download": {
+      "label": "Descargar"
+    },
+    "footer": {
+      "primero": "UN ESFUERZO CONJUNTO CON",
+      "segundo": "TECNOLOGÍA DE VANGUARDIA"
+    }
+  },
+  "Benefits": {
+    "title": {
+      "white": "MARCAMOS",
+      "orange": "LA DIFERENCIA",
+      "caption": "CONOCE TODOS LOS SERVICIOS QUE NOS HACEN ÚNICOS"
+    },
+    "cards": {
+      "primera": {
+        "title": "DIRECTO A <br></br> TU PUERTA",
+        "text": "Obtén tu Tarjeta Digital o <br></br> solicita una <b>Tarjeta de <br></br> Débito Prepagada a <br></br> domicilio sin costo*</b>"
+      },
+      "segunda": {
+        "title": "TRANSFIERE <br></br> DESDE TU CELULAR",
+        "text": "<b>Envía dinero a tus contactos <br></br> en México y USA </b> desde tu <br></br> Cuenta Sacbé"
+      },
+      "tercera": {
+        "title": "USA EL MÉTODO QUE <br></br> TE CONVENGA",
+        "text": "Retira en cajeros, o <b> paga <br></br> con tu tarjeta en tiendas <br></br> físicas o en línea** </b>"
+      },
+      "cuarta": {
+        "title": "HAZLO TODO EN <br></br> UNA SOLA APP",
+        "text": "Paga tus servicios o <br></br> <b> recarga tiempo aire </b>"
+      }
+    },
+    "disclaimer": {
+      "text": "*Esta tarjeta es emitida por Metropolitan Commercial Bank (Miembro FDIC) conforme con una licencia de Visa U.S.A Inc. Cargos adicionales de  terceros pueden aplicar, para más información ver el Anexo de tarifas y cargos. **Válido para comercios y plataformas que aceptan pagos con tarjeta VISA™."
+    },
+    "footer": {
+      "orange": "UNA NUEVA FORMA",
+      "blue": "DE ENVIAR DINERO A MÉXICO"
+    }
+  },
+  "Steps": {
+    "title": {
+      "orange": "envía dinero <br></br>",
+      "blue": "a México* en minutos"
+    },
+    "cards": {
+      "primera": {
+        "title": "CARGA TU CUENTA EN <br></br> ESTADOS UNIDOS",
+        "text": "Carga dinero desde <b> cuentas bancarias, tarjetas o en efectivo en tiendas cercanas** </b>"
+      },
+      "segunda": {
+        "title": "ENVÍA DINERO <br></br> PAGANDO SÓLO",
+        "text": "Cargo de Transferencia <br></br> internacional directa con un <br></br> atractivo tipo de cambio***"
+      },
+      "tercera": {
+        "title": "RETIRAN DONDE <br></br> LO NECESITEN",
+        "text": "Directamente en establecimientos o en uno <br></br> de los <b> +44,000 cajeros <br></br> (ATM) en el país**** </b>"
+      }
+    },
+    "mobile": {
+      "text": "Envía dinero desde Estados Unidos por sólo $1.50*** a cualquier parte de México, o fondea tu Cuenta Sacbé con tus tarjetas de crédito, débito y hasta con efectivo.",
+      "image": "/imgs/steps/mobile-es.svg"
+    },
+    "disclaimer": {
+      "text": "*El destinatario deberá aplicar a una Cuenta Sacbé en México. En México, las cuentas con tarjeta Sacbé están patrocinadas por separado por Sacbé Payments de México, S.A.P.I de C.V. Institución de Fondos de Pago Electrónico conforme a una licencia de Mastercard International. **Servicio  son  Transferencia internacional directa $1.50. El tipo de cambio aplicado se muestra al momento de la transacción. Para mas información sobre tasas o tarifas  ver el contrato del titular de Sacbé."
+    },
+    "footer": {
+      "text": "ENVÍOS 24/7 DESDE TU TELÉFONO"
+    }
+  },
+  "Quoter": {
+    "title": {
+      "blue": "CALCULA",
+      "orange": "TU ENVÍO",
+      "caption": "Descubre lo fácil que es hacer <br></br> envíos desde tu Cuenta Sacbé™"
+    },
+    "app": {
+      "label_one": "SI NECESITA",
+      "label_two": "TÚ ENVÍAS",
+      "dollar_today": "Dólar hoy:",
+      "button": "Enviar ahora"
+    },
+    "disclaimer": {
+      "text": "*El tipo de cambio mostrado en de carácter meramente informativo y se actualiza constantemente, por lo que está sujeto a cambios sin previo aviso. Para más información sobre tasas o tarifas ver el Contrato del Titular de Sacbé."
+    },
+    "footer": {
+      "text": "REGÍSTRATE  <b> EN MINUTOS </b>"
+    }
+  },
+  "Table": {
+    "title": {
+      "blue": "REGÍSTRATE <br></br>",
+      "orange": "CON TU MÓVIL <br></br> Y UN ID CON FOTO",
+      "caption": "Sin Social Security <br></br> Number (SSN) ni Green Card*",
+      "text": "Una solución financiera en Estados Unidos <br></br> donde podrás recibir pagos, enviar dinero, <br></br> cargar tiempo aire, y pagar servicios."
+    },
+    "titleMobile": {
+      "blue": "REGÍSTRATE",
+      "orange": "EN MINUTOS",
+      "text": "Una solución financiera en Estados Unidos  donde podrás recibir pagos, enviar dinero, cargar tiempo aire, y pagar servicios."
+    },
+    "table": {
+      "image": "/imgs/table/table-es.svg",
+      "text": "Para tu registro necesitarás una identificación con foto, más <br></br> un comprobante de domicilio bajo tu nombre o algún familiar."
+    },
+    "disclaimer": {
+      "text": "*Aplica para personas sin SSN disponible pero que pueden proporcionar formas <br></br> alternas de identificación. **Este cuadro comparativo es  meramente informativo <br></br> y se actualiza constantemente, por lo que está sujeto a cambios sin previo aviso.",
+      "mobile": "*Este cuadro comparativo es meramente informativo y se actualiza constantemente, por lo que está sujeto a cambios sin previo aviso. **Aplica para personas sin SSN disponible pero que pueden proporcionar formas alternas de identificación."
+    },
+    "footer": {
+      "text": "CONTÁCTANOS. <b> ESTAMOS PARA TI </b>"
+    }
+  }
+}
