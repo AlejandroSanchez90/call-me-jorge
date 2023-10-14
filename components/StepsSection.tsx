@@ -127,7 +127,7 @@ function StepsSection({}: Props) {
         </div>
         {/* FOOTER */}
         <div className=''>
-          <p className='text-center font-Sintony text-[8px] leading-[8px]  lg:leading-[14px] lg:text-xs  w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  pt-5'>
+          <p className='text-center lg:pb-3 font-Sintony text-[8px] leading-[8px]  lg:leading-[14px] lg:text-xs  w-[80%] lg:max-w-6xl mx-auto lg:mt-5 footer  '>
             {t('disclaimer.text')}
           </p>
         </div>

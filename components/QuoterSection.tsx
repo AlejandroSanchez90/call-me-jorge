@@ -45,7 +45,7 @@ function QuoterSection({ exchangeRate }: Props) {
       <p className='lg:hidden max-w-2xl w-[80%] lg:w-full font-Sintony text-center text-[8px] leading-[8px] text-sacbeBlue lg:text-sacbeBeige'>
         {t('disclaimer.text')}
       </p>
-      <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[12%]  lg:-translate-x-[50%]  z-50'>
+      <div className='absolute lg:block hidden w-[32rem]  lg:left-[75%] lg:bottom-[16%]  lg:-translate-x-[50%]  z-50'>
         <p className='max-w-2xl w-1/2 lg:w-full font-Sintony text-center text-[9px] lg:leading-[14px] lg:text-xs  text-sacbeBlue lg:text-sacbeBeige'>
           {t('disclaimer.text')}
         </p>
