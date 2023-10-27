@@ -29,14 +29,14 @@ function HeroSection({}: Props) {
   return (
     <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-5 '>
       {/* Texto  DESKTOP*/}
-      <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
-        <div className='relative max-w-[45rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
+      <div className='hidden lg:flex items-center justify-center  h-full w-full '>
+        <div className=' relative max-w-[39rem] px-8  mx-auto flex  flex-col gap-3 2xl:gap-5   2xl:px-0'>
           {/* Title */}
-          <h1 className='text-sacbeBlue  text-[70px] lg:text-7xl  lg:leading-[55px]  font-bold w-[80%]  '>
-            {t('title.green')} <span className='text-sacbeOrange'>{t('title.orange')}</span>
+          <h1 className='text-sacbeOrange first-line:text-sacbeBlue text-[70px] lg:text-7xl  lg:leading-[55px]  font-bold  '>
+            {t('title.green')} <span className=''>{t('title.orange')}</span>
           </h1>
           {/* List */}
-          <ul className='list-disc text-sacbeBlue text-2xl  2xl:text-3xl flex flex-col ml-7 '>
+          <ul className='list-disc text-sacbeBlue text-2xl  2xl:text-3xl flex flex-col ml-7 mb-2'>
             <li className='leading-[29px]'>{t('list.primera')}</li>
             <li className='leading-[29px]'>{t('list.segunda')}</li>
             <li className='leading-[29px]'>{t('list.tercera')}</li>
@@ -47,7 +47,7 @@ function HeroSection({}: Props) {
             onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col gap-3 px-5 xl:px-0'
           >
-            <div className=' flex gap-3 w-[90%]'>
+            <div className=' flex gap-3 w-[100%]'>
               <InputCross
                 placeholder={t('form.name')}
                 id='name'
@@ -68,7 +68,7 @@ function HeroSection({}: Props) {
                 errors={errors}
               />
             </div>
-            <div className=' flex gap-3 w-[90%]'>
+            <div className=' flex gap-3 w-[100%]'>
               <InputCross
                 placeholder={t('form.email')}
                 id='email'
@@ -90,14 +90,14 @@ function HeroSection({}: Props) {
                 errors={errors}
               />
             </div>
-            <div className='flex w-[90%] gap-3 items-center justify-center'>
+            <div className='flex w-[100%] gap-3 items-center justify-center mt-4 mb-2'>
               <ButtonRound label={t('form.submit')} className='py-4 font-bold' />
               <div className='w-full text-2xl xl:text-3xl font-Tungsten text-sacbeOrangeDarker '>
                 <p className='max-w-[250px] leading-[23px] '>{t('form.note')}</p>
               </div>
             </div>
             <div className='absolute top-[100%]'>
-              <p className='lg:leading-[14px] lg:text-xs md:sm max-w-md font-Sintony mt-5 text-sacbeBlue'>
+              <p className='lg:leading-[14px] lg:text-xs md:sm max-w-[500px] font-Sintony mt-5 text-sacbeBlue'>
                 {t('disclaimer.text')}
               </p>
             </div>
