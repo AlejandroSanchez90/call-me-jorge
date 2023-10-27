@@ -39,7 +39,7 @@ function InputSacbe({
             id={id}
             placeholder={placeholder}
             className={cn(
-              `text-2xl peer appearance-none no-spinners autofill:fill-none  text-sacbeBlue placeholder:text-sacbeBlue pl-10 bg-inherit border-[2px] border-sacbeBlue w-full font-Tungsten h-12 xl:h-12 outline-none`,
+              `text-2xl peer appearance-none no-spinners autofill:fill-none  text-sacbeBlue placeholder:text-sacbeBlue pl-10 bg-inherit border-[2px] border-sacbeBlue w-full font-Tungsten h-12  outline-none`,
               errors[id] && 'border-rose-800',
               className,
             )}
