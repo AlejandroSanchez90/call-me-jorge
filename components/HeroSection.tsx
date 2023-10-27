@@ -32,7 +32,7 @@ function HeroSection({}: Props) {
       <div className='hidden lg:flex items-center justify-center bg-sacbeBeige h-full w-full'>
         <div className='relative max-w-[45rem] flex flex-col gap-3 2xl:gap-5  px-2 2xl:px-0'>
           {/* Title */}
-          <h1 className='text-sacbeBlue  text-[70px] lg:text-8xl lg:leading-[85px] font-bold  '>
+          <h1 className='text-sacbeBlue  text-[70px] lg:text-7xl xl:text-8xl lg:leading-[75px] xl:leading-[85px] font-bold  '>
             {t('title.green')} <span className='text-sacbeOrange'>{t('title.orange')}</span>
           </h1>
           {/* List */}
