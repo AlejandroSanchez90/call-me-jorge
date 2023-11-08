@@ -71,7 +71,7 @@ function TableSection({}: Props) {
             width={700}
             height={700}
             alt=''
-            className=' object-cover w-1/2'
+            className=' object-cover md:w-1/2 w-11/12'
           />
           <p className='hidden lg:block text-center font-Sintony font-bold text-sm text-sacbeBlue'>
             {t.rich('table.text', {
