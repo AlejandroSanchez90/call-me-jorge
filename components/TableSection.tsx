@@ -66,7 +66,13 @@ function TableSection({}: Props) {
         {/* TABLE */}
 
         <div className='w-full lg:w-1/2 flex h-full justify-center items-center flex-col gap-3 px-2'>
-          <Image src={t('table.image')} width={700} height={700} alt='' className=' object-cover' />
+          <Image
+            src={t('table.image')}
+            width={700}
+            height={700}
+            alt=''
+            className=' object-cover w-1/2'
+          />
           <p className='hidden lg:block text-center font-Sintony font-bold text-sm text-sacbeBlue'>
             {t.rich('table.text', {
               b: (chunks) => <b>{chunks}</b>,
