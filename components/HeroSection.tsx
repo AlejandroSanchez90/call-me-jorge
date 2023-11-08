@@ -29,10 +29,10 @@ function HeroSection({}: Props) {
   return (
     <div className=' h-full pt-14  lg:pb-footer-padding w-ful  flex flex-col lg:flex-row items-center justify-center pb-5 '>
       {/* Texto  DESKTOP*/}
-      <div className='hidden lg:flex items-center justify-center  h-full w-full '>
+      <div className='hidden lg:flex items-center justify-center  h-full w-full  '>
         <div className=' relative max-w-[39rem] px-8  mx-auto flex  flex-col gap-3 2xl:gap-5   2xl:px-0'>
           {/* Title */}
-          <h1 className='text-sacbeOrange first-line:text-sacbeBlue text-[70px] lg:text-7xl  lg:leading-[55px]  font-bold  '>
+          <h1 className='text-sacbeOrange first-line:text-sacbeBlue text-[70px] lg:text-6xl  lg:leading-[45px] xl:text-7xl  xl:leading-[55px]  font-bold  '>
             {t('title.green')} <span className=''>{t('title.orange')}</span>
           </h1>
           {/* List */}
@@ -96,7 +96,7 @@ function HeroSection({}: Props) {
                 <p className='max-w-[250px] leading-[23px] '>{t('form.note')}</p>
               </div>
             </div>
-            <div className='absolute top-[100%]'>
+            <div className='absolute top-[97%]'>
               <p className='lg:leading-[14px] lg:text-xs md:sm max-w-[500px] font-Sintony mt-5 text-sacbeBlue'>
                 {t('disclaimer.text')}
               </p>
@@ -105,7 +105,7 @@ function HeroSection({}: Props) {
         </div>
       </div>
       {/*  */}
-      <div className=' lg:flex items-center justify-center   h-[50vh] lg:h-full w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
+      <div className=' lg:flex items-center justify-center   h-[50vh] lg:h-full w-full lg:w-2/3 xl:w-full bg-hero-img  bg-no-repeat bg-top  bg-cover'></div>
 
       {/* Mobile */}
       <div className='lg:hidden flex  gap-3  px-3 pt-3 w-full  flex-col items-center justify-center'>
