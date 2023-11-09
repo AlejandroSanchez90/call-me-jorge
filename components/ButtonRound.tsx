@@ -14,7 +14,7 @@ function ButtonRound({ label, className, onClick, diabled }: Props) {
       onClick={onClick}
       disabled={diabled}
       className={cn(
-        `bg-sacbeBlue w-full border-sacbeOrangeDarker border-2 rounded-full font-Sintony text-sacbeBeige hover:brightness-90`,
+        `bg-sacbeBlue disabled:opacity-80 disabled:cursor-wait w-full border-sacbeOrangeDarker border-2 rounded-full font-Sintony text-sacbeBeige hover:brightness-90`,
         className,
       )}
     >
