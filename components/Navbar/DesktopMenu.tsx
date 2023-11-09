@@ -14,7 +14,7 @@ function DesktopMenu({}: Props) {
       <ul className=' flex items-center justify-center gap-8 text-sacbeBeige text-sm'>
         {routes.map((route) => (
           <li key={route.label} className='hover:text-sacbeOrangeDarker transition-colors'>
-            <Link href={route.path}>{route.label}</Link>
+            <a href={route.path}>{route.label}</a>
           </li>
         ))}
 

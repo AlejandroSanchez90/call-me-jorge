@@ -43,19 +43,19 @@ function Footer({}: Props) {
             </h3>
             <ul className='flex flex-col gap-3 text-sacbeBeige text-sm'>
               <li>
-                <Link href={t('links.terms.one.url')}>{t('links.terms.one.label')}</Link>
+                <a href={t('links.terms.one.url')}>{t('links.terms.one.label')}</a>
               </li>
               <li>
-                <Link href={t('links.terms.two.url')}>{t('links.terms.two.label')}</Link>
+                <a href={t('links.terms.two.url')}>{t('links.terms.two.label')}</a>
               </li>
               <li>
-                <Link href={t('links.terms.three.url')}>{t('links.terms.three.label')}</Link>
+                <a href={t('links.terms.three.url')}>{t('links.terms.three.label')}</a>
               </li>
               <li>
-                <Link href={t('links.terms.four.url')}>{t('links.terms.four.label')}</Link>
+                <a href={t('links.terms.four.url')}>{t('links.terms.four.label')}</a>
               </li>
               <li>
-                <Link href={t('links.terms.five.url')}>{t('links.terms.five.label')}</Link>
+                <a href={t('links.terms.five.url')}>{t('links.terms.five.label')}</a>
               </li>
             </ul>
           </div>
@@ -66,22 +66,22 @@ function Footer({}: Props) {
             </h3>
             <ul className='flex flex-col gap-3 text-sacbeBeige text-sm'>
               <li>
-                <Link href={t('links.customer.one.url')}>{t('links.customer.one.label')}</Link>
+                <a href={t('links.customer.one.url')}>{t('links.customer.one.label')}</a>
               </li>
               <li>
-                <Link href={t('links.customer.two.url')}>{t('links.customer.two.label')}</Link>
+                <a href={t('links.customer.two.url')}>{t('links.customer.two.label')}</a>
               </li>
               <li>
-                <Link href='#Política' className='font-bold'>
+                <a href='#Política' className='font-bold'>
                   support@sacbepayments.com
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href='#Política'>
+                <a href='#Política'>
                   {' '}
                   <span className='font-bold'>+1 928 237 9808</span> <br />{' '}
                   {t('links.customer.hours')}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -92,13 +92,13 @@ function Footer({}: Props) {
             </h3>
             <ul className='flex flex-col gap-3 text-sacbeBeige text-sm'>
               <li>
-                <Link href={t('links.us.one.url')}>{t('links.us.one.label')}</Link>
+                <a href={t('links.us.one.url')}>{t('links.us.one.label')}</a>
               </li>
               <li>
-                <Link href={t('links.us.two.url')}>{t('links.us.two.label')}</Link>
+                <a href={t('links.us.two.url')}>{t('links.us.two.label')}</a>
               </li>
               <li>
-                <Link href={t('links.us.three.url')}>{t('links.us.three.label')}</Link>
+                <a href={t('links.us.three.url')}>{t('links.us.three.label')}</a>
               </li>
               <li>
                 3480 Main Highway, <br /> Suite 400,

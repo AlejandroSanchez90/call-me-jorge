@@ -19,7 +19,7 @@ function LanguageSwitcher({ className }: Props) {
   function handleClick(event: ChangeEvent<HTMLSelectElement>) {
     onClose();
     startTransition(() => {
-      router.push(locale + '.html', { scroll: false });
+      router.push(locale, { scroll: false });
     });
   }
   return (

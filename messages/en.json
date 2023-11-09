@@ -141,30 +141,30 @@
         "title": "Terms of Use",
         "one": {
           "label": "Privacy Policy",
-          "url": "/pdf/en/Privacy_Policy.pdf"
+          "url": "pdf/en/Privacy_Policy.pdf"
         },
         "two": {
           "label": "Cardholder Agreement",
-          "url": "/pdf/en/Cardholder_Agreement.pdf"
+          "url": "pdf/en/Cardholder_Agreement.pdf"
         },
         "three": {
           "label": "Fee Schedule",
-          "url": "/pdf/en/Fee_Schedule.pdf"
+          "url": "pdf/en/Fee_Schedule.pdf"
         },
         "four": {
           "label": "Cancellation and Refund Policy",
-          "url": "/pdf/en/Cancellation_and_Refund_Policy.pdf"
+          "url": "pdf/en/Cancellation_and_Refund_Policy.pdf"
         },
         "five": {
           "label": "Disclaimer and Notices",
-          "url": "/pdf/en/Disclaimer_Disclosure.pdf"
+          "url": "pdf/en/Disclaimer_Disclosure.pdf"
         }
       },
       "customer": {
         "title": "Customer Service",
         "one": {
           "label": "FAQs",
-          "url": "/pdf/en/FAQ.pdf"
+          "url": "pdf/en/FAQ.pdf"
         },
         "two": {
           "label": "Contact Us",

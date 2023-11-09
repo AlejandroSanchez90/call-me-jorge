@@ -140,30 +140,30 @@
         "title": "Términos de uso",
         "one": {
           "label": "Política de Privacidad",
-          "url": "/pdf/es/Privacy_Policy.pdf"
+          "url": "pdf/es/Privacy_Policy.pdf"
         },
         "two": {
           "label": "Contrato de titular",
-          "url": "/pdf/es/Cardholder_Agreement.pdf"
+          "url": "pdf/es/Cardholder_Agreement.pdf"
         },
         "three": {
           "label": "Tarifas y cargos",
-          "url": "/pdf/es/Fee_Schedule.pdf"
+          "url": "pdf/es/Fee_Schedule.pdf"
         },
         "four": {
           "label": "Política de Cancelaciones y Reembolsos",
-          "url": "/pdf/es/Cancellation_and_Refund_Policy.pdf"
+          "url": "pdf/es/Cancellation_and_Refund_Policy.pdf"
         },
         "five": {
           "label": "Renuncia de Responsabilidad y Notificaciones",
-          "url": "/pdf/es/Disclaimer_Disclosure.pdf"
+          "url": "pdf/es/Disclaimer_Disclosure.pdf"
         }
       },
       "customer": {
         "title": "Servicio al Cliente",
         "one": {
           "label": "Preguntas Frecuentes",
-          "url": "/pdf/es/FAQ.pdf"
+          "url": "pdf/es/FAQ.pdf"
         },
         "two": {
           "label": "Contacto",
