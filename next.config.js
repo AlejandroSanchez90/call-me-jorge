@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  optimizeFonts: false,
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

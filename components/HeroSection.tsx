@@ -6,6 +6,7 @@ import SectionFooter from './SectionFooter';
 import toast from 'react-hot-toast';
 import ButtonDownload from './ButtonDownload';
 import { useTranslations } from 'next-intl';
+import { postData } from '@/utils/helperts';
 type Props = {};
 export type HeroInputs = {
   name: string;
@@ -21,7 +22,9 @@ function HeroSection({}: Props) {
     formState: { errors },
   } = useForm<HeroInputs>();
 
-  const onSubmit: SubmitHandler<HeroInputs> = (data) => {
+  const onSubmit: SubmitHandler<HeroInputs> = async (data: any) => {
+    const test = await postData({ url: '/api/sheet', data: data });
+    console.log(test);
     toast.success('Formulario enviado con éxito');
   };
   const t = useTranslations('Hero');
