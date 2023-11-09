@@ -21,7 +21,7 @@ function QuoterSection({ exchangeRate }: Props) {
         <div className=' flex justify-center items-center  gap-3 2xl:gap-5 h-full  px-2 2xl:px-0 '>
           {/* Title */}
           <div className='flex flex-col gap-3 lg:gap-0'>
-            <h1 className='text-center lg:text-left text-sacbeBlue text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] font-bold '>
+            <h1 className='text-center lg:text-left text-sacbeBlue text-5xl leading-[45px] lg:text-8xl lg:leading-[80px] font-bold '>
               {t('title.blue')} <br />{' '}
               <span className='text-sacbeOrangeDarker'> {t('title.orange')} </span>
             </h1>

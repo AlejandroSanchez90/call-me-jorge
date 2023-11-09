@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Call me jorge',
 };
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'de' }];
+  return [{ locale: 'en' }, { locale: 'es' }];
 }
 import type { ReactNode } from 'react';
 

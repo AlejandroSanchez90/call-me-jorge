@@ -88,14 +88,14 @@ input::-webkit-inner-spin-button {
 
 @font-face {
   font-family: Tungsten;
-  src: url('../public/fonts/tungsten-medium-webfont.woff2');
+  src: url('/fonts/tungsten-medium-webfont.woff2');
   font-weight: medium;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: Tungsten;
-  src: url('../public/fonts/tungsten-bold-webfont.woff2');
+  src: url('/fonts/tungsten-bold-webfont.woff2');
   font-weight: bold;
   font-style: normal;
   font-display: block;
@@ -103,14 +103,14 @@ input::-webkit-inner-spin-button {
 /* Sintony font */
 @font-face {
   font-family: Sintony;
-  src: url('../public/fonts//Sintony-Regular.ttf');
+  src: url('/fonts/Sintony-Regular.ttf');
   font-weight: medium;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: Sintony;
-  src: url('../public/fonts//Sintony-Bold.ttf');
+  src: url('/fonts/Sintony-Bold.ttf');
   font-weight: bold;
   font-style: normal;
   font-display: block;

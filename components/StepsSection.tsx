@@ -15,11 +15,12 @@ function StepsSection({}: Props) {
       <div className='flex flex-col h-full justify-center w-full gap-2 lg:gap-4 pb-5 lg:pb-0'>
         {/* Header */}
         <div className='flex items-center flex-col'>
-          <h1 className='text-5xl leading-[45px] lg:text-8xl lg:leading-[85px] text-center font-bold text-sacbeOrangeDarker  uppercase'>
+          <h1 className='text-5xl leading-[45px] pt-0 md:pt-8 lg:text-8xl lg:leading-[70px] text-center font-bold text-sacbeOrangeDarker  uppercase'>
             {t.rich('title.orange', {
               b: (chunks) => <b>{chunks}</b>,
               br: () => <br />,
             })}
+
             <span className='text-sacbeBlue'>
               {' '}
               {t.rich('title.blue', {
