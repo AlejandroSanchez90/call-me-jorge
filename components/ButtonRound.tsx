@@ -5,12 +5,14 @@ type Props = {
   label: string;
   className?: string;
   onClick?: () => void;
+  diabled?: boolean;
 };
 
-function ButtonRound({ label, className, onClick }: Props) {
+function ButtonRound({ label, className, onClick, diabled }: Props) {
   return (
     <button
       onClick={onClick}
+      disabled={diabled}
       className={cn(
         `bg-sacbeBlue w-full border-sacbeOrangeDarker border-2 rounded-full font-Sintony text-sacbeBeige hover:brightness-90`,
         className,

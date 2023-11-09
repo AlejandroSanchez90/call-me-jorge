@@ -7,6 +7,7 @@ import toast from 'react-hot-toast';
 import ButtonDownload from './ButtonDownload';
 import { useTranslations } from 'next-intl';
 import { postData } from '@/utils/helperts';
+import { useState } from 'react';
 type Props = {};
 export type HeroInputs = {
   name: string;
@@ -22,10 +23,21 @@ function HeroSection({}: Props) {
     formState: { errors },
   } = useForm<HeroInputs>();
 
-  const onSubmit: SubmitHandler<HeroInputs> = async (data: any) => {
-    const test = await postData({ url: '/api/sheet', data: data });
-    console.log(test);
-    toast.success('Formulario enviado con éxito');
+  const [isLoading, setIsLoading] = useState(false);
+  const onSubmit: SubmitHandler<HeroInputs> = async (data) => {
+    try {
+      setIsLoading(true);
+      await postData({ url: '/api/sheet', data: data });
+      setTimeout(() => {
+        toast.success('Formulario enviado con éxito');
+      }, 3000);
+    } catch (error) {
+      toast.error('Internal Error');
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    }
   };
   const t = useTranslations('Hero');
 
@@ -94,7 +106,11 @@ function HeroSection({}: Props) {
               />
             </div>
             <div className='flex w-[100%] gap-3 items-center justify-center mt-4 mb-2'>
-              <ButtonRound label={t('form.submit')} className='py-4 font-bold' />
+              <ButtonRound
+                diabled={isLoading}
+                label={t('form.submit')}
+                className='py-4 font-bold'
+              />
               <div className='w-full text-2xl xl:text-3xl font-Tungsten text-sacbeOrangeDarker '>
                 <p className='max-w-[250px] leading-[23px] '>{t('form.note')}</p>
               </div>
